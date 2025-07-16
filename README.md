@@ -63,4 +63,4 @@ Origm Vault の目的は、テンプレ構造の **持続的進化** と **再�
 ## 🔗 公開リンク
 
 - 📂 [構造評価ダッシュボード](https://q2t-project.github.io/origm-vault/views/dashboard/index.html)
-- 📂 [システム構造図（UML一覧）](https://q2t-project.github.io/origm-vault/uml/)
+- 📂 [システム構造図（UML一覧）](https://q2t-project.github.io/origm-vault/docs/uml/)
