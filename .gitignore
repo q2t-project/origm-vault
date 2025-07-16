@@ -1,0 +1,37 @@
+# ========== Obsidian Vault用 ==========
+.obsidian/
+.cache/
+workspace.json
+workspace-mobile.json
+.DS_Store
+Thumbs.db
+
+# ========== OS共通 ==========
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+desktop.ini
+Thumbs.db
+ehthumbs.db
+
+# ========== テンポラリ/一時生成物 ==========
+*.log
+*.tmp
+*.bak
+~$*
+
+# ========== Python等スクリプト系の実験ファイル ==========
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+*.egg-info/
+
+# ========== その他 ==========
+*.swp
+*.swo
+*.zip
+*.tar.gz

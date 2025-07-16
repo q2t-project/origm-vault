@@ -1,0 +1,16 @@
+{
+  "name": "origm-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one"
+  ],
+  "forwardPorts": [],
+  "remoteUser": "vscode"
+}
