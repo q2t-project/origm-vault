@@ -1,0 +1,29 @@
+@startuml uml_simlog_evolution
+
+title SimLog 系列の進化図
+
+skinparam linetype ortho
+skinparam arrowFontSize 10
+
+[fold_simlog_v0] as S0
+[fold_simlog_v1] as S1
+[fold_simlog_v2] as S2
+[fold_simlog_v3] as S3
+[fold_simlog_v4] as S4
+
+[fold_macro.yaml] as Macro
+[評価Zettel] as Eval
+[DSL記述] as DSL
+
+S0 --> S1 : μ = 0.4
+S1 --> S2 : μ = 0.5
+S2 --> S3 : μ = 0.6
+S3 --> S4 : μ = 0.8
+
+S0 ..> Macro : 派生元
+S1 ..> Eval : 評価記録
+S2 ..> DSL : DSL接続追加
+S4 ..> Eval : 再評価
+S4 ..> DSL : DSL拡張版
+
+@enduml

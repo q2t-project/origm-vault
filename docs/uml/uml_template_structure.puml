@@ -1,0 +1,34 @@
+@startuml uml_template_structure
+
+title テンプレ構造のモジュール図
+
+package "構造テンプレ群" {
+  [fold_macro.yaml]
+  [テンプレZettel]
+  [評価Zettel]
+}
+
+package "外部UI・表示" {
+  [QuickAdd UI]
+  [Dataview]
+  [Canvas構造]
+}
+
+package "抽象化レイヤ" {
+  [DSL記述]
+  [SimLog]
+}
+
+[fold_macro.yaml] --> [テンプレZettel] : 展開
+[テンプレZettel] --> [評価Zettel] : 評価対象
+[テンプレZettel] --> [SimLog] : 派生ログ
+
+[テンプレZettel] ..> [QuickAdd UI] : 選択候補
+[テンプレZettel] ..> [Canvas構造] : 視覚展開
+[テンプレZettel] ..> [Dataview] : フィルタ対象
+
+[fold_macro.yaml] --> [DSL記述] : DSL構造と対応
+[Canvas構造] --> [SimLog] : ログ系列の構成
+[SimLog] --> [DSL記述] : 進化モデル入力
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml uml_dsl_dependency
+
+title DSLテンプレの依存構造図
+
+package "テンプレ構造" {
+  [fold_macro.yaml]
+  [テンプレZettel]
+  [評価Zettel]
+}
+
+package "DSL命令ブロック" {
+  [@構文]
+  [@節点]
+  [@接続]
+  [@変化]
+  [@テンション]
+}
+
+package "構造出力・連携" {
+  [SimLog]
+  [Canvas構造]
+  [Dataview]
+}
+
+[fold_dsl] --> [@構文]
+[fold_dsl] --> [@節点]
+[fold_dsl] --> [@接続]
+[fold_dsl] --> [@変化]
+[fold_dsl] --> [@テンション]
+
+[@構文] --> [fold_macro.yaml] : マッピング
+[@節点] --> [テンプレZettel]
+[@接続] --> [Canvas構造]
+[@変化] --> [SimLog]
+[@テンション] --> [評価Zettel]
+[@節点] --> [Dataview]
+
+@enduml
