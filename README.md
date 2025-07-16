@@ -1,62 +1,66 @@
-# Origm – 構造を折り、意味を立ち上げる記述システム
+# Origm Vault – 構造を折り、意味を立ち上げる記述システム
 
 Origm（オリグム）は、「構造がどこにあるのか？」という問い──  
 すなわち、構造は世界の側にあるのか、それとも認識の行為によって生成されるのか──  
 という古典的な対立を、“折り目（fold）”という単位で折り合わせる実践的記述体系です。
 
-この問いは、私たち自身の言語に突きつけられています。
-
-> **自然言語は、構造それ自体を語ることができるのか？**  
-> それとも、構造を語るためには別の言語が必要なのか？
-
-Origmは、知や判断の外側にある「構造そのもの」を、テンプレートと評価の連鎖を通じて折り畳み、  
-構造の中から意味を立ち上げるための“折り紙のような記述空間”を提供します。
+このVaultは、Origmに基づくテンプレート・分類語彙・構造シミュレーションなどを統合・公開する空間として設計されています。
 
 ---
 
-## 📐 構造のコア要素
+## 📦 フォルダ構成
 
-- **fold_macro**：意味生成の単位である「折り目」を記述するテンプレート（φ–ψ–μ 構造）
-- **テンション理論**：構造の中に生じる意味の緊張（μ）を記録し、進化の力学とする
-- **SimLog**：テンプレートの評価→変化→進化を記録する1対1の進化ログ
-- **Canvas構造**：テンプレやZettelの関係を3D視覚空間に展開し、構造流を可視化
-
----
-
-## 🗂 ディレクトリ構成
-
-```
-Origm/
-├── docs/               # システム仕様やUI、紹介用ドキュメント
-├── fold_templates/     # fold_macroテンプレ素材
-├── zettel/             # Zettel本体（fold, simlog, morph, eval）
-├── src/                # 自動化スクリプトなど（予定）
-├── .gitignore          # Obsidianの一時ファイルなどを除外
-├── LICENSE             # ライセンス（MIT推奨）
-└── README.md           # このファイル
-```
+| フォルダ | 内容 |
+|----------|------|
+| `zettel/` | テンプレート・分類語彙・進化Zettel |
+| `fold_templates/` | fold構造テンプレの設計素材 |
+| `macro/` | fold_macro構造の派生・推薦テンプレ群 |
+| `canvas/` | Obsidian Canvas構造（分類・テンション分布など） |
+| `docs/` | GitHub Pages 用のHTML / JS / 可視化コンテンツ |
+| `src/` | Pythonスクリプト、DSL変換、解析系など |
+| `scripts/` | 補助ツール（diff処理、正規化、分類支援など） |
+| `config/` | DataviewフィルタやGitHub Actions設定（予定） |
 
 ---
 
-## 🚀 QuickStart（導入手順）
+## 🧭 ダッシュボードでできること
 
-1. このVaultを `Obsidian` に読み込む
-2. `docs/views/dashboard/index.html` をブラウザで開く（テンプレ選択UI）
-3. 任意のテンプレを選び、Zettelを記述・評価・進化させる
-4. Canvasに出力して、構造を可視化・変化の流れを記録
+[📄 Dashboardページへ移動](https://q2t-project.github.io/origm-vault/views/dashboard/index.html)
 
----
-
-## 🔗 関連構成要素
-
-- `ZdZ_q2t-action-governor-v1.1.md`：全アクションの構造的規範を定める
-- `fold_macro.yaml`：全テンプレの構造記述・属性・評価結果を集約
-- `SimLog`：構造テンプレの進化過程を1ログで記述（Zettel化）
-- `Canvas`：テンプレ・Zettel・テンション評価の立体構造を視覚展開
+- 推薦テンプレのUI選択とQuickAdd連携  
+- fold_macro構造への変換スニペット  
+- Canvas可視化（分類・テンション分布など）  
+- テンプレ進化ルートの構造比較・逆算支援  
 
 ---
 
-## 📜 ライセンス
+## 🔍 関連トピック（GitHubタグ）
 
-MIT License  
-※別途、構造記述言語としての拡張ライセンス体系を将来的に検討予定
+- `obsidian`
+- `template-system`
+- `q2t`
+- `knowledge-structure`
+- `vault`
+- `structure-notation`
+
+---
+
+## 📄 ライセンス
+
+本Vault内のテンプレート・スクリプト・可視化素材は、以下のライセンスで公開されています：
+
+[MIT License](LICENSE)
+
+---
+
+## ✨ プロジェクトへの参加・連携
+
+Origm Vault の目的は、テンプレ構造の **持続的進化** と **再利用のための設計共有**です。  
+構造記述テンプレートに関心のある方、UI連携や構造分類の実装に協力いただける方は、IssueやDiscussionを通じてご連絡ください。
+
+---
+
+## 🔗 公開リンク
+
+- 📂 [構造評価ダッシュボード](https://q2t-project.github.io/origm-vault/views/dashboard/index.html)
+- 📂 [システム構造図（UML一覧）](https://q2t-project.github.io/origm-vault/uml/)
