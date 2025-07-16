@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "譲歩",
+      "text": "譲歩",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "否定",
+      "text": "否定",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_10",
+      "text": "譲歩→否定 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "譲歩_to_dsl",
+      "fromNode": "譲歩",
+      "toNode": "fold_dsl_from_simlog_10",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_否定",
+      "fromNode": "fold_dsl_from_simlog_10",
+      "toNode": "否定",
+      "label": "to"
+    }
+  ]
+}

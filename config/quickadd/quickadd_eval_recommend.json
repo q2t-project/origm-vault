@@ -1,0 +1,10 @@
+{
+  "name": "評価テンプレからの進化推薦",
+  "choices": [
+    {
+      "name": "Zettel評価に基づくテンプレ進化",
+      "type": "nested",
+      "choices": []
+    }
+  ]
+}

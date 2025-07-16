@@ -1,0 +1,35 @@
+// Fold Macro Series (μ・φ・ψ付き)
+digraph {
+	rankdir=LR size=10
+	subgraph cluster_undefined {
+		label=undefined
+	}
+	"morph_stage_1->morph_stage_2" -> "morph_stage_2->morph_stage_2" [label=next color="#999" style=dashed]
+	"morph_stage_2->morph_stage_3" -> "morph_stage_3->morph_stage_3" [label=next color="#999" style=dashed]
+	"morph_stage_3->morph_stage_4" -> "morph_stage_4->morph_stage_4" [label=next color="#999" style=dashed]
+	"morph_stage_4->morph_stage_5" -> "morph_stage_5->morph_stage_5" [label=next color="#999" style=dashed]
+	"morph_stage_5->morph_stage_6" -> "morph_stage_6->morph_stage_6" [label=next color="#999" style=dashed]
+	"φ=1,->φ=1," -> "φ=1,->φ=1," [label=next color="#999" style=dashed]
+	"φ=1,->φ=2," -> "φ=2,->φ=2," [label=next color="#999" style=dashed]
+	"φ=2,->φ=3," -> "φ=3,->φ=3," [label=next color="#999" style=dashed]
+	"φ=3,->φ=4," -> "φ=4,->φ=4," [label=next color="#999" style=dashed]
+	"φ=4,->φ=5," -> "φ=5,->φ=5," [label=next color="#999" style=dashed]
+	subgraph "cluster_morph.base.flow" {
+		label="morph.base.flow"
+		"morph_stage_1->morph_stage_2" [label="morph_stage_1→morph_stage_2\nμ=1 φ=1 ψ=0" fillcolor=lightgrey style=filled]
+		"morph_stage_2->morph_stage_3" [label="morph_stage_2→morph_stage_3\nμ=2 φ=2 ψ=1" fillcolor=gold style=filled]
+		"morph_stage_3->morph_stage_4" [label="morph_stage_3→morph_stage_4\nμ=3 φ=3 ψ=2" fillcolor=orange style=filled]
+		"morph_stage_4->morph_stage_5" [label="morph_stage_4→morph_stage_5\nμ=4 φ=4 ψ=3" fillcolor=orangered style=filled]
+		"morph_stage_5->morph_stage_6" [label="morph_stage_5→morph_stage_6\nμ=5 φ=5 ψ=4" fillcolor=orangered style=filled]
+		"φ=1,->φ=1," [label="φ=1,→φ=1,\nμ=1 φ=1 ψ=0" fillcolor=lightgrey style=filled]
+		"φ=1,->φ=2," [label="φ=1,→φ=2,\nμ=2 φ=2 ψ=1" fillcolor=gold style=filled]
+		"φ=2,->φ=3," [label="φ=2,→φ=3,\nμ=3 φ=3 ψ=2" fillcolor=orange style=filled]
+		"φ=3,->φ=4," [label="φ=3,→φ=4,\nμ=4 φ=4 ψ=3" fillcolor=orangered style=filled]
+		"φ=4,->φ=5," [label="φ=4,→φ=5,\nμ=5 φ=5 ψ=4" fillcolor=orangered style=filled]
+	}
+	"φ=0,->φ=0," -> "φ=0,->φ=0," [label=next color="#999" style=dashed]
+	subgraph cluster_unknown {
+		label=unknown
+		"φ=0,->φ=0," [label="φ=0,→φ=0,\nμ=0 φ=0 ψ=0" fillcolor=lightgrey style=filled]
+	}
+}

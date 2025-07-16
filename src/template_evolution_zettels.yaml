@@ -1,0 +1,63 @@
+# template_evolution_zettels.yaml
+#
+# 概要: Origm Vaultの「Zettel進化系列」定義テンプレート
+# 各Zettel（例: 原因・結論・否定・質問・定義・説明）が、どのfold_type/テンプレート/進化元・進化先との関係を持つかをDSL的に記述した一覧です。
+# 主な用途:
+#   - テンプレ/Zettelの進化ルート（系列展開・分岐・派生）の自動生成
+#   - gen_macro_structures.py等のスクリプトでfold_macro.yaml等に派生展開する際の参照元
+# 編集ルール:
+#   - evolves_from/evolves_to: 進化元・進化先のテンプレ名リスト
+#   - fold_type: 進化・分岐のタイプ（例: transformation, assertion, contradiction, null等）
+#   - id/template: 一意のIDとテンプレ名（日本語可、要整合）
+#   - テンプレ追加や分岐構造を設計・拡張する際は、必ずここに追記・更新すること
+# 例:
+# - evolves_from: [原因]
+#   evolves_to: [結論]
+#   fold_type: transformation
+#   id: evolution-原因
+#   template: 原因
+
+- evolves_from: []
+  evolves_to:
+  - 結論
+  fold_type: transformation
+  id: evolution-原因
+  template: 原因
+- evolves_from:
+  - 原因
+  evolves_to:
+  - 否定
+  - 質問
+  fold_type: transformation
+  id: evolution-結論
+  template: 結論
+- evolves_from:
+  - 質問
+  - 定義
+  evolves_to:
+  - 定義
+  fold_type: transformation
+  id: evolution-説明
+  template: 説明
+- evolves_from:
+  - 説明
+  evolves_to:
+  - 説明
+  fold_type: assertion
+  id: evolution-定義
+  template: 定義
+- evolves_from:
+  - 結論
+  evolves_to:
+  - 質問
+  fold_type: 'null'
+  id: evolution-否定
+  template: 否定
+- evolves_from:
+  - 否定
+  - 結論
+  evolves_to:
+  - 説明
+  fold_type: contradiction
+  id: evolution-質問
+  template: 質問

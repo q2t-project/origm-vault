@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fold Macro DSLシミュレーター</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    select { font-size: 1em; padding: 6px; margin-bottom: 1em; }
+    pre { background: #f4f4f4; padding: 1em; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h2>Fold Macro テンプレ進化DSL シミュレーター</h2>
+  <select id="dslSelector"></select>
+  <pre id="dslPreview"></pre>
+
+<script>
+const blocks = [
+  {
+    "label": "対照 → 原因",
+    "dsl": "template evolution {\n  @from 対照\n  @to 原因\n  μ = \n  series_id = \n}"
+  }
+];
+const sel = document.getElementById("dslSelector");
+const pre = document.getElementById("dslPreview");
+
+blocks.forEach((b, i) => {
+  const opt = document.createElement("option");
+  opt.value = i;
+  opt.textContent = b.label;
+  sel.appendChild(opt);
+});
+
+sel.addEventListener("change", () => {
+  const selected = blocks[sel.value];
+  pre.textContent = selected.dsl;
+});
+
+// 初期表示
+sel.value = 0;
+pre.textContent = blocks[0].dsl;
+</script>
+</body>
+</html>

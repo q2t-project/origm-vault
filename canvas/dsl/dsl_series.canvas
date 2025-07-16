@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"node_null","type":"text","text":"null","layer":"foreground","x":0,"y":0,"width":220,"height":80},
+		{"id":"node_affect","type":"text","text":"affect\nμ=5","layer":"foreground","x":300,"y":150,"width":220,"height":80},
+		{"id":"node_assertion","type":"text","text":"assertion\nμ=4","layer":"foreground","x":600,"y":0,"width":220,"height":80},
+		{"id":"node_proposition","type":"text","text":"proposition\nμ=4","layer":"foreground","x":900,"y":150,"width":220,"height":80},
+		{"id":"node_interpretation","type":"text","text":"interpretation\nμ=4","layer":"foreground","x":1200,"y":0,"width":220,"height":80},
+		{"id":"node_semantic","type":"text","text":"semantic\nμ=5","layer":"foreground","x":1500,"y":150,"width":220,"height":80},
+		{"id":"node_value","type":"text","text":"value\nμ=4","layer":"foreground","x":1800,"y":0,"width":220,"height":80},
+		{"id":"node_image","type":"text","text":"image\nμ=4","layer":"foreground","x":2100,"y":150,"width":220,"height":80}
+	],
+	"edges":[
+		{"id":"edge_null_affect","class":"evolution","fromNode":"node_null","fromSide":"bottom","toNode":"node_affect","toSide":"top","label":"→"},
+		{"id":"edge_affect_assertion","class":"evolution","fromNode":"node_affect","fromSide":"top","toNode":"node_assertion","toSide":"bottom","label":"→"},
+		{"id":"edge_assertion_proposition","class":"evolution","fromNode":"node_assertion","fromSide":"bottom","toNode":"node_proposition","toSide":"top","label":"→"},
+		{"id":"edge_proposition_interpretation","class":"evolution","fromNode":"node_proposition","fromSide":"top","toNode":"node_interpretation","toSide":"bottom","label":"→"},
+		{"id":"edge_interpretation_semantic","class":"evolution","fromNode":"node_interpretation","fromSide":"bottom","toNode":"node_semantic","toSide":"top","label":"→"},
+		{"id":"edge_semantic_value","class":"evolution","fromNode":"node_semantic","fromSide":"top","toNode":"node_value","toSide":"bottom","label":"→"},
+		{"id":"edge_image_value","class":"evolution","fromNode":"node_image","fromSide":"top","toNode":"node_value","toSide":"bottom","label":"→"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

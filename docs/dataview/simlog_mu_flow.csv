@@ -1,0 +1,13 @@
+series_id,from,to,mu,fold_type
+simlog.null.01,,,0,express
+simlog.null.02,,,0,compare
+simlog.null.03,,,0,define
+simlog.null.04,,,0,explain
+simlog.null.05,,,0,inquire
+simlog.ast.原因_結論,原因,,1,結論
+simlog.ast.否定_質問,否定,,1,質問
+simlog.ast.定義_説明,定義,,1,説明
+simlog.ast.結論_否定,結論,,1,否定
+simlog.ast.結論_質問,結論,,1,質問
+simlog.ast.説明_定義,説明,,1,定義
+simlog.ast.質問_説明,質問,,1,説明

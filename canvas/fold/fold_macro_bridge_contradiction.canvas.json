@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "F01",
+      "type": "text",
+      "text": "構造テンプレ",
+      "x": 0,
+      "y": 0,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "F01_slot1",
+      "type": "text",
+      "text": "slot: 主張",
+      "x": 0,
+      "y": 100,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "id": "F01_slot2",
+      "type": "text",
+      "text": "slot: 根拠",
+      "x": 0,
+      "y": 170,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "id": "F01_slot3",
+      "type": "text",
+      "text": "slot: 帰結",
+      "x": 0,
+      "y": 240,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "id": "F02",
+      "type": "text",
+      "text": "反論テンプレ",
+      "x": 400,
+      "y": 0,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "F02_slot1",
+      "type": "text",
+      "text": "slot: 反論対象",
+      "x": 400,
+      "y": 100,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "id": "F02_slot2",
+      "type": "text",
+      "text": "slot: 反論内容",
+      "x": 400,
+      "y": 170,
+      "width": 200,
+      "height": 50
+    },
+    {
+      "id": "F02_slot3",
+      "type": "text",
+      "text": "slot: 反証例",
+      "x": 400,
+      "y": 240,
+      "width": 200,
+      "height": 50
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_F01_F01_slot1",
+      "type": "edge",
+      "source": "F01",
+      "target": "F01_slot1",
+      "label": ""
+    },
+    {
+      "id": "edge_F01_F01_slot2",
+      "type": "edge",
+      "source": "F01",
+      "target": "F01_slot2",
+      "label": ""
+    },
+    {
+      "id": "edge_F01_F01_slot3",
+      "type": "edge",
+      "source": "F01",
+      "target": "F01_slot3",
+      "label": ""
+    },
+    {
+      "id": "edge_F02_F02_slot1",
+      "type": "edge",
+      "source": "F02",
+      "target": "F02_slot1",
+      "label": ""
+    },
+    {
+      "id": "edge_F02_F02_slot2",
+      "type": "edge",
+      "source": "F02",
+      "target": "F02_slot2",
+      "label": ""
+    },
+    {
+      "id": "edge_F02_F02_slot3",
+      "type": "edge",
+      "source": "F02",
+      "target": "F02_slot3",
+      "label": ""
+    },
+    {
+      "id": "bridge_contradiction",
+      "type": "edge",
+      "source": "F01_slot1",
+      "target": "F02_slot1",
+      "label": "Bridge: contradiction"
+    },
+    {
+      "id": "simlog_F01_F02",
+      "type": "edge",
+      "source": "F01",
+      "target": "F02",
+      "label": "Δ+1"
+    }
+  ]
+}

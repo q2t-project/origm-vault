@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "原因",
+      "text": "原因",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "結論",
+      "text": "結論",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_2",
+      "text": "原因→結論 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "原因_to_dsl",
+      "fromNode": "原因",
+      "toNode": "fold_dsl_from_simlog_2",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_結論",
+      "fromNode": "fold_dsl_from_simlog_2",
+      "toNode": "結論",
+      "label": "to"
+    }
+  ]
+}

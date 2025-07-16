@@ -1,0 +1,17 @@
+{
+  "name": "Recommended Template Selector",
+  "choices": [
+    {
+      "name": "define→rule",
+      "macro": "fold_macro_define_rule"
+    },
+    {
+      "name": "state→effect",
+      "macro": "fold_macro_state_effect"
+    },
+    {
+      "name": "cause→outcome",
+      "macro": "fold_macro_cause_outcome"
+    }
+  ]
+}

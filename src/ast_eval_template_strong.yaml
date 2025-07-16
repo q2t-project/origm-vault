@@ -1,0 +1,145 @@
+# ast_eval_template_strong.yaml
+#
+# 概要: Origm Vault 評価テンプレート用AST（抽象構造木）強化版定義
+# 評価観点・評価対象・判断/帰結という3スロット構造と、その間のブリッジ（関係）を厳密に記述した「assertion型」テンプレート。
+# 通常のASTテンプレよりも評価構造を強化し、テンプレ・Zettel・SimLog等の高精度進化・可視化・分析用の基盤データとして利用。
+# 主な用途:
+#   - fold_macro・評価Zettel・SimLog等への強化テンプレ投入
+#   - 進化系列やCanvas構造の厳密化・派生テンプレ自動生成
+# 編集ルール:
+#   - bridges: スロット間の明示的な関係をlabel/type付きで記述（application, result等）
+#   - slots: 評価観点/対象/判断（順序と名称厳守、拡張時は必ず整合性チェック）
+#   - mu: テンション値（系統ごとの代表値、評価基準）
+#   - fold_type: assertion（他型派生時は要明示）
+#   - name: テンプレ/ノード名（fold_macro/SimLog/評価テンプレと対応）
+#   - 追加・拡張時はブリッジ構造・スロット命名規則の統一に留意
+# 例:
+# - bridges:
+#     - from_slot: 評価観点
+#       label: 観点が対象に適用される
+#       to_slot: 評価対象
+#       type: application
+#     - from_slot: 評価対象
+#       label: 対象から結論が導かれる
+#       to_slot: 判断/帰結
+#       type: result
+#   fold_type: assertion
+#   mu: 4
+#   name: 主張
+#   slots:
+#     - 評価観点
+#     - 評価対象
+#     - 判断/帰結
+
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: assertion
+  mu: 4
+  name: 主張
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: assertion
+  mu: 4
+  name: 命題
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: interpretation
+  mu: 5
+  name: 意味
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: evaluation
+  mu: 4
+  name: 値
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: affect
+  mu: 5
+  name: 情動
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: representation
+  mu: 5
+  name: 像
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結
+- bridges:
+  - from_slot: 評価観点
+    label: 観点が対象に適用される
+    to_slot: 評価対象
+    type: application
+  - from_slot: 評価対象
+    label: 対象から結論が導かれる
+    to_slot: 判断/帰結
+    type: result
+  fold_type: interpretation
+  mu: 4
+  name: 解釈
+  slots:
+  - 評価観点
+  - 評価対象
+  - 判断/帰結

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SimLog テンプレ切替UI + プレビュー</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+select { font-size: 16px; }
+pre { background: #f8f8f8; padding: 10px; border-radius: 6px; white-space: pre-wrap; }
+hr { margin: 20px 0; }
+</style>
+</head>
+<body>
+<h2>🧩 SimLogテンプレ一覧（系列別 + プレビュー）</h2>
+<label for="series">系列を選択:</label>
+<select id="series" onchange="showEntries()"></select>
+
+<div id="entries"></div>
+
+<script>
+let simlogData = {};
+fetch("simlog_index_with_preview.json")
+  .then(response => response.json())
+  .then(data => {
+    simlogData = data;
+    const select = document.getElementById("series");
+    Object.keys(simlogData).forEach(sid => {
+      const opt = document.createElement("option");
+      opt.value = sid;
+      opt.textContent = sid;
+      select.appendChild(opt);
+    });
+    showEntries();
+  });
+
+function showEntries() {
+  const sid = document.getElementById("series").value;
+  const container = document.getElementById("entries");
+  container.innerHTML = "";
+  simlogData[sid].forEach(entry => {
+    const wrapper = document.createElement("div");
+    wrapper.innerHTML = `<h3>from: ${entry.from} → to: ${entry.to}</h3>
+    <p><b>ファイル:</b> ${entry.path}</p>
+    <p><b>Canvas:</b> <a href="canvas_dsl_series_${sid.replace(/\./g, '_')}.json" target="_blank">系列Canvasを開く</a></p>
+    <pre>${entry.content}</pre><hr>`;
+    container.appendChild(wrapper);
+  });
+}
+</script>
+</body>
+</html>

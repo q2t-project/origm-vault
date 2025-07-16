@@ -1,0 +1,7 @@
+<script>
+function jumpToRecommendation(template) {
+  const [from, to] = template.split("→");
+  const zettelPath = `zettel/fold/eval-${from}-${to}.md`;
+  window.location.href = `obsidian://open?path=${encodeURIComponent(zettelPath)}`;
+}
+</script>

@@ -1,0 +1,16 @@
+{
+  "name": "Start from Null",
+  "choices": [
+    {
+      "name": "nullテンプレートから開始",
+      "type": "nested",
+      "choices": [
+        {
+          "name": "→ 推奨テンプレ：",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        }
+      ]
+    }
+  ]
+}

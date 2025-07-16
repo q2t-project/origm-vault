@@ -1,0 +1,155 @@
+- centroid_distance: 3.0451153135353137
+  cluster_id: 0
+  dsl:
+    from: 'null'
+    mu: 0.73
+    mutation: base_init
+    psi: refutation
+    state: stable
+    to: unknown
+  eval:
+    comment: 初期評価：テンション構造は安定。分類・進化が明確。
+    last_eval: '2025-07-13'
+    mu_score: 0.73
+    psi_focus: refutation
+    tension_state: stable
+  from:
+  - 対照
+  id: 対照_原因
+  label: 対照 → 原因
+  morph: 推論
+  note: 比較から因果への進化
+  phi: 0
+  psi: 0
+  tags:
+  - μ=3
+  - logic
+  tension: 3
+  tension_label: low-tension
+  to:
+  - 原因
+  type: 因果
+  μ_axis: 相互作用
+  φ_axis: 比較
+  ψ_axis: 推論
+- centroid_distance: 3.0451153135353137
+  cluster_id: 0
+  fold_type: morph_stage_2
+  from: morph_stage_1
+  mu: 1
+  phi: 1
+  psi: 0
+  series_id: morph.base.flow
+  tension_label: low-tension
+  title: morph_stage_1 → morph_stage_2
+  to: morph_stage_2
+- centroid_distance: 1.3142574813455417
+  cluster_id: 1
+  fold_type: morph_stage_3
+  from: morph_stage_2
+  mu: 2
+  phi: 2
+  psi: 1
+  series_id: morph.base.flow
+  tension_label: normal
+  title: morph_stage_2 → morph_stage_3
+  to: morph_stage_3
+- centroid_distance: 0.42640143271122116
+  cluster_id: 2
+  fold_type: morph_stage_4
+  from: morph_stage_3
+  mu: 3
+  phi: 3
+  psi: 2
+  series_id: morph.base.flow
+  tension_label: medium-tension
+  title: morph_stage_3 → morph_stage_4
+  to: morph_stage_4
+- centroid_distance: 2.1532216876958206
+  cluster_id: 3
+  fold_type: morph_stage_5
+  from: morph_stage_4
+  mu: 4
+  phi: 4
+  psi: 3
+  series_id: morph.base.flow
+  tension_label: high-tension
+  title: morph_stage_4 → morph_stage_5
+  to: morph_stage_5
+- centroid_distance: 3.884701930767545
+  cluster_id: 4
+  fold_type: morph_stage_6
+  from: morph_stage_5
+  mu: 5
+  phi: 5
+  psi: 4
+  series_id: morph.base.flow
+  tension_label: high-tension
+  title: morph_stage_5 → morph_stage_6
+  to: morph_stage_6
+- centroid_distance: 4.264014327112209
+  cluster_id: 0
+  fold_type: φ=0,
+  from: φ=0,
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: unknown
+  tension_label: low-tension
+  title: φ=0, → φ=0,
+  to: φ=0,
+- centroid_distance: 3.0451153135353137
+  cluster_id: 0
+  fold_type: φ=1,
+  from: φ=1,
+  mu: 1
+  phi: 1
+  psi: 0
+  series_id: morph.base.flow
+  tension_label: low-tension
+  title: φ=1, → φ=1,
+  to: φ=1,
+- centroid_distance: 1.3142574813455417
+  cluster_id: 1
+  fold_type: φ=2,
+  from: φ=1,
+  mu: 2
+  phi: 2
+  psi: 1
+  series_id: morph.base.flow
+  tension_label: normal
+  title: φ=1, → φ=2,
+  to: φ=2,
+- centroid_distance: 0.42640143271122116
+  cluster_id: 2
+  fold_type: φ=3,
+  from: φ=2,
+  mu: 3
+  phi: 3
+  psi: 2
+  series_id: morph.base.flow
+  tension_label: medium-tension
+  title: φ=2, → φ=3,
+  to: φ=3,
+- centroid_distance: 2.1532216876958206
+  cluster_id: 3
+  fold_type: φ=4,
+  from: φ=3,
+  mu: 4
+  phi: 4
+  psi: 3
+  series_id: morph.base.flow
+  tension_label: high-tension
+  title: φ=3, → φ=4,
+  to: φ=4,
+- centroid_distance: 3.884701930767545
+  cluster_id: 4
+  fold_type: φ=5,
+  from: φ=4,
+  mu: 5
+  phi: 5
+  psi: 4
+  series_id: morph.base.flow
+  tension_label: high-tension
+  title: φ=4, → φ=5,
+  to: φ=5,

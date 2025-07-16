@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "node_0",
+      "x": 0,
+      "y": 300,
+      "width": 240,
+      "height": 100,
+      "text": "仮テンプレ Express\nμ=0"
+    },
+    {
+      "id": "node_1",
+      "x": 0,
+      "y": 300,
+      "width": 240,
+      "height": 100,
+      "text": "仮テンプレ Compare\nμ=0"
+    },
+    {
+      "id": "node_2",
+      "x": 0,
+      "y": 300,
+      "width": 240,
+      "height": 100,
+      "text": "仮テンプレ Define\nμ=0"
+    },
+    {
+      "id": "node_3",
+      "x": 0,
+      "y": 300,
+      "width": 240,
+      "height": 100,
+      "text": "仮テンプレ Explain\nμ=0"
+    },
+    {
+      "id": "node_4",
+      "x": 0,
+      "y": 300,
+      "width": 240,
+      "height": 100,
+      "text": "仮テンプレ Inquire\nμ=0"
+    },
+    {
+      "id": "node_5",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（原因→結論）\nμ=1"
+    },
+    {
+      "id": "node_6",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（否定→質問）\nμ=1"
+    },
+    {
+      "id": "node_7",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（定義→説明）\nμ=1"
+    },
+    {
+      "id": "node_8",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（結論→否定）\nμ=1"
+    },
+    {
+      "id": "node_9",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（結論→質問）\nμ=1"
+    },
+    {
+      "id": "node_10",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（説明→定義）\nμ=1"
+    },
+    {
+      "id": "node_11",
+      "x": 0,
+      "y": 260,
+      "width": 240,
+      "height": 100,
+      "text": "SimLog派生テンプレ（質問→説明）\nμ=1"
+    }
+  ],
+  "edges": []
+}

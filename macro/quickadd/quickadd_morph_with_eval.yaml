@@ -1,0 +1,15 @@
+- eval_link: '[[zettel/eval/eval-morph_stage_1-morph_stage_2.md]]'
+  name: morph_stage_1 → morph_stage_2 (μ=1)
+  value: morph_stage_2
+- eval_link: '[[zettel/eval/eval-morph_stage_2-morph_stage_3.md]]'
+  name: morph_stage_2 → morph_stage_3 (μ=2)
+  value: morph_stage_3
+- eval_link: '[[zettel/eval/eval-morph_stage_3-morph_stage_4.md]]'
+  name: morph_stage_3 → morph_stage_4 (μ=3)
+  value: morph_stage_4
+- eval_link: '[[zettel/eval/eval-morph_stage_4-morph_stage_5.md]]'
+  name: morph_stage_4 → morph_stage_5 (μ=4)
+  value: morph_stage_5
+- eval_link: '[[zettel/eval/eval-morph_stage_5-morph_stage_6.md]]'
+  name: morph_stage_5 → morph_stage_6 (μ=5)
+  value: morph_stage_6

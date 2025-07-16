@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"F01","type":"text","text":"構造テンプレ","x":0,"y":0,"width":250,"height":60},
+		{"id":"F01_slot1","type":"text","text":"slot: 主張","x":0,"y":100,"width":200,"height":50},
+		{"id":"F01_slot2","type":"text","text":"slot: 根拠","x":0,"y":170,"width":200,"height":50},
+		{"id":"F01_slot3","type":"text","text":"slot: 帰結","x":0,"y":240,"width":200,"height":50},
+		{"id":"F02","type":"text","text":"反論テンプレ","x":400,"y":0,"width":250,"height":60},
+		{"id":"F02_slot1","type":"text","text":"slot: 反論対象","x":400,"y":100,"width":200,"height":50},
+		{"id":"F02_slot2","type":"text","text":"slot: 反論内容","x":400,"y":170,"width":200,"height":50},
+		{"id":"F02_slot3","type":"text","text":"slot: 反証例","x":400,"y":240,"width":200,"height":50},
+		{"id":"F03","type":"text","text":"展開テンプレ","x":800,"y":0,"width":250,"height":60},
+		{"id":"F03_slot1","type":"text","text":"slot: 前提","x":800,"y":100,"width":200,"height":50},
+		{"id":"F03_slot2","type":"text","text":"slot: 補助要素","x":800,"y":170,"width":200,"height":50},
+		{"id":"F03_slot3","type":"text","text":"slot: 展開先","x":800,"y":240,"width":200,"height":50}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "評価テンプレ由来テンプレ一覧",
+  "choices": [
+    {
+      "name": "μ分類でフィルタ",
+      "type": "nested",
+      "choices": [
+        {
+          "name": "→ 評価派生：conclude（μ=2）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-conclude.md",
+          "tags": [
+            "mu:mid",
+            "source:eval"
+          ]
+        }
+      ]
+    }
+  ]
+}

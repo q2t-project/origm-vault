@@ -1,0 +1,49 @@
+[
+  {
+    "section": "1",
+    "text": "Die Welt ist alles, was der Fall ist.[1]",
+    "children": [
+      {
+        "section": "1.1",
+        "text": "Die Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.",
+        "children": []
+      },
+      {
+        "section": "1.11",
+        "text": "Die Welt ist durch die Tatsachen bestimmt und dadurch, dass sie alle Tatsachen sind.",
+        "children": []
+      },
+      {
+        "section": "1.12",
+        "text": "Denn, die Gesamtheit der Tatsachen bestimmt, was der Fall ist und auch, was nicht der Fall ist.",
+        "children": []
+      },
+      {
+        "section": "1.13",
+        "text": "Die Tatsachen im logischen Raum sind die Welt.",
+        "children": []
+      },
+      {
+        "section": "1.2",
+        "text": "Die Welt zerfällt in Tatsachen.",
+        "children": []
+      },
+      {
+        "section": "1.21",
+        "text": "Eines kann der Fall sein oder nicht der Fall sein und alles übrige gleich bleiben.",
+        "children": []
+      }
+    ]
+  },
+  {
+    "section": "2",
+    "text": "Was der Fall ist, die Tatsache, ist das Bestehen von Sachverhalten.",
+    "children": [
+      {
+        "section": "2.01",
+        "text": "Der Sachverhalt ist eine Verbindung von Gegenständen. (Sachen, Dingen.)",
+        "children": []
+      }
+    ]
+  }
+]

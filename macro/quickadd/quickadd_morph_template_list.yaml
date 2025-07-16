@@ -1,0 +1,16 @@
+- mu: 2
+  name: morph_stage_2 → morph_stage_2_μ2 (μ=2)
+  series_id: morph.base.flow.μ2
+  value: morph_stage_2_μ2
+- mu: 3
+  name: morph_stage_3 → morph_stage_3_μ3 (μ=3)
+  series_id: morph.base.flow.μ3
+  value: morph_stage_3_μ3
+- mu: 4
+  name: morph_stage_4 → morph_stage_4_μ4 (μ=4)
+  series_id: morph.base.flow.μ4
+  value: morph_stage_4_μ4
+- mu: 5
+  name: morph_stage_5 → morph_stage_5_μ5 (μ=5)
+  series_id: morph.base.flow.μ5
+  value: morph_stage_5_μ5

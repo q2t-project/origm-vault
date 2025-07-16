@@ -1,0 +1,219 @@
+{
+  "nodes": [
+    {
+      "id": "null_start",
+      "x": -300,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "label": "NULL",
+      "note": "起点ノード"
+    },
+    {
+      "id": "node1",
+      "x": 0,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "評価Zettel（SimLog由来）",
+      "note": "eval_原因-結論.md"
+    },
+    {
+      "id": "node2",
+      "x": 300,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "評価Zettel（SimLog由来）",
+      "note": "eval_対照-原因.md"
+    },
+    {
+      "id": "node3",
+      "x": 600,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "評価Zettel（SimLog由来）",
+      "note": "eval_対照_原因-対照.md"
+    },
+    {
+      "id": "node4",
+      "x": 900,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "plan_path.md",
+      "note": "plan_path.md"
+    },
+    {
+      "id": "node5",
+      "x": 1200,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-001.md"
+    },
+    {
+      "id": "node6",
+      "x": 1500,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-002.md"
+    },
+    {
+      "id": "node7",
+      "x": 1800,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-003.md"
+    },
+    {
+      "id": "node8",
+      "x": 2100,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-004.md"
+    },
+    {
+      "id": "node9",
+      "x": 2400,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-005.md"
+    },
+    {
+      "id": "node10",
+      "x": 2700,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-006.md"
+    },
+    {
+      "id": "node11",
+      "x": 3000,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-007.md"
+    },
+    {
+      "id": "node12",
+      "x": 3300,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-008.md"
+    },
+    {
+      "id": "node13",
+      "x": 3600,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-009.md"
+    },
+    {
+      "id": "node14",
+      "x": 3900,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "# DSL構文",
+      "note": "zettel-simlog-010.md"
+    },
+    {
+      "id": "node15",
+      "x": 4200,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "感嘆→比較 (express-compare)",
+      "note": "zettel-simlog-express-compare.md"
+    },
+    {
+      "id": "node16",
+      "x": 4500,
+      "y": 100,
+      "width": 240,
+      "height": 100,
+      "label": "反語→否定 (irony-refute)",
+      "note": "zettel-simlog-irony-refute.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge5",
+      "fromNode": "null_start",
+      "toNode": "node5",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge6",
+      "fromNode": "null_start",
+      "toNode": "node6",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge7",
+      "fromNode": "null_start",
+      "toNode": "node7",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge8",
+      "fromNode": "null_start",
+      "toNode": "node8",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge9",
+      "fromNode": "null_start",
+      "toNode": "node9",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge10",
+      "fromNode": "null_start",
+      "toNode": "node10",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge11",
+      "fromNode": "null_start",
+      "toNode": "node11",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge12",
+      "fromNode": "null_start",
+      "toNode": "node12",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge13",
+      "fromNode": "null_start",
+      "toNode": "node13",
+      "label": "μ=?"
+    },
+    {
+      "id": "edge14",
+      "fromNode": "null_start",
+      "toNode": "node14",
+      "label": "μ=?"
+    }
+  ]
+}

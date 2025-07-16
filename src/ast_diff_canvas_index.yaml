@@ -1,0 +1,115 @@
+# ast_diff_canvas_index.yaml
+#
+# 概要: AST差分Canvasファイルのインデックスおよびslot差分記録
+# 各Canvasファイルごとに「from→to」テンプレの進化・変化に伴うslot（スロット）の増減（added/removed）を一覧化した索引データ。
+# 主な用途:
+#   - Canvasテンプレ構造の進化履歴管理・差分検出・自動可視化
+#   - ast_diff_canvas_*.canvasファイル群とfold_macro/SimLog/Zettel等との連携参照
+# 編集ルール:
+#   - canvas_file: 紐付くCanvasファイル名（命名規則必ず一致）
+#   - from/to: 進化元・進化先テンプレ名（日本語・Canvas内一致）
+#   - fold_type_from/to: 進化前後のfold_type
+#   - slot_diff: {added: [新規スロット], removed: [消失スロット]}
+#   - 追加・編集時はslot_diffとCanvas/テンプレ現物の整合性を厳密に確認
+#   - ファイル名/slot名等の重複・揺れを避けること
+# 例:
+# - canvas_file: ast_diff_canvas_原因_結論.canvas
+#   fold_type_from: transformation
+#   fold_type_to: transformation
+#   from: 原因
+#   slot_diff:
+#     added: [前提, 推論, 結論]
+#     removed: [原因因子, 結果]
+#   to: 結論
+
+- canvas_file: ast_diff_canvas_原因_結論.canvas
+  fold_type_from: transformation
+  fold_type_to: transformation
+  from: 原因
+  slot_diff:
+    added:
+    - 前提
+    - 推論
+    - 結論
+    removed:
+    - 原因因子
+    - 結果
+  to: 結論
+- canvas_file: ast_diff_canvas_説明_定義.canvas
+  fold_type_from: transformation
+  fold_type_to: assertion
+  from: 説明
+  slot_diff:
+    added:
+    - 定義対象
+    - 定義内容
+    removed:
+    - 概念
+    - 関係性
+    - 事例
+  to: 定義
+- canvas_file: ast_diff_canvas_否定_質問.canvas
+  fold_type_from: 'null'
+  fold_type_to: contradiction
+  from: 否定
+  slot_diff:
+    added:
+    - 問い
+    - 前提
+    - 回答候補
+    removed:
+    - 否定対象
+    - 否定理由
+  to: 質問
+- canvas_file: ast_diff_canvas_結論_否定.canvas
+  fold_type_from: transformation
+  fold_type_to: 'null'
+  from: 結論
+  slot_diff:
+    added:
+    - 否定対象
+    - 否定理由
+    removed:
+    - 前提
+    - 推論
+    - 結論
+  to: 否定
+- canvas_file: ast_diff_canvas_質問_説明.canvas
+  fold_type_from: contradiction
+  fold_type_to: transformation
+  from: 質問
+  slot_diff:
+    added:
+    - 概念
+    - 関係性
+    - 事例
+    removed:
+    - 問い
+    - 前提
+    - 回答候補
+  to: 説明
+- canvas_file: ast_diff_canvas_定義_説明.canvas
+  fold_type_from: assertion
+  fold_type_to: transformation
+  from: 定義
+  slot_diff:
+    added:
+    - 概念
+    - 関係性
+    - 事例
+    removed:
+    - 定義対象
+    - 定義内容
+  to: 説明
+- canvas_file: ast_diff_canvas_結論_質問.canvas
+  fold_type_from: transformation
+  fold_type_to: contradiction
+  from: 結論
+  slot_diff:
+    added:
+    - 問い
+    - 回答候補
+    removed:
+    - 推論
+    - 結論
+  to: 質問

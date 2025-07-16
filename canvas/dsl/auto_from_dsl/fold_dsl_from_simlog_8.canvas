@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "前提",
+      "text": "前提",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "定義",
+      "text": "定義",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_8",
+      "text": "前提→定義 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "前提_to_dsl",
+      "fromNode": "前提",
+      "toNode": "fold_dsl_from_simlog_8",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_定義",
+      "fromNode": "fold_dsl_from_simlog_8",
+      "toNode": "定義",
+      "label": "to"
+    }
+  ]
+}

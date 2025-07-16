@@ -1,0 +1,16 @@
+
+digraph FoldSystem {
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=lightgray];
+
+  FoldMacro [label="fold_macro.yaml\n(構造テンプレ群)"];
+  SimLog [label="SimLogテンプレ群\n(simlog_*.yaml / .md)"];
+  Canvas [label="構造Canvas\n(.canvas構造)"];
+
+  FoldMacro -> SimLog [label="テンプレ変化 → 進化記録"];
+  SimLog -> Canvas [label="進化系列 → 可視化"];
+  Canvas -> FoldMacro [label="AST差分/テンション逆流"];
+
+  FoldMacro -> Canvas [label="テンプレ構造投影"];
+  SimLog -> FoldMacro [label="テンション/系列から分類補完"];
+}

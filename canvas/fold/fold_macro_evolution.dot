@@ -1,0 +1,5 @@
+digraph FoldMacroEvolution {
+  rankdir=LR;
+  node [shape=box, style=filled, color=lightblue];
+  "['対照']" -> "['原因']";
+}

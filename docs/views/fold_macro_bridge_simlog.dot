@@ -1,0 +1,34 @@
+digraph FoldBridgeSimLog {
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=lightgray];
+
+  F01 [label="F01\n構造テンプレ"];
+  F02 [label="F02\n反論テンプレ"];
+  F03 [label="F03\n展開テンプレ"];
+
+  F01_s1 [label="slot: 主張", shape=ellipse];
+  F01_s2 [label="slot: 根拠", shape=ellipse];
+  F01_s3 [label="slot: 帰結", shape=ellipse];
+  F02_s1 [label="slot: 反論対象", shape=ellipse];
+  F02_s2 [label="slot: 反論内容", shape=ellipse];
+  F02_s3 [label="slot: 反証例", shape=ellipse];
+  F03_s1 [label="slot: 前提", shape=ellipse];
+  F03_s2 [label="slot: 補助要素", shape=ellipse];
+  F03_s3 [label="slot: 展開先", shape=ellipse];
+
+  F01 -> F01_s1;
+  F01 -> F01_s2;
+  F01 -> F01_s3;
+  F02 -> F02_s1;
+  F02 -> F02_s2;
+  F02 -> F02_s3;
+  F03 -> F03_s1;
+  F03 -> F03_s2;
+  F03 -> F03_s3;
+
+  F01_s1 -> F02_s1 [label="B01"];
+  F02_s3 -> F03_s1 [label="B02"];
+
+  F01 -> F02 [label="SimLog L01\nΔ+1", color=blue, penwidth=2];
+  F02 -> F03 [label="SimLog L02\nΔ+1", color=blue, penwidth=2];
+}

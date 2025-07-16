@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"node_null","type":"text","text":"null","layer":"foreground","x":-300,"y":0,"width":200,"height":80},
+		{"id":"node_affect","type":"text","text":"affect\nμ=5","layer":"foreground","x":0,"y":0,"width":220,"height":80},
+		{"id":"node_assertion","type":"text","text":"assertion\nμ=4","layer":"foreground","x":300,"y":150,"width":220,"height":80},
+		{"id":"node_image","type":"text","text":"image\nμ=5","layer":"foreground","x":600,"y":0,"width":220,"height":80},
+		{"id":"node_interpretation","type":"text","text":"interpretation\nμ=4","layer":"foreground","x":900,"y":150,"width":220,"height":80},
+		{"id":"node_proposition","type":"text","text":"proposition\nμ=4","layer":"foreground","x":1200,"y":0,"width":220,"height":80},
+		{"id":"node_semantic","type":"text","text":"semantic\nμ=5","layer":"foreground","x":1500,"y":150,"width":220,"height":80},
+		{"id":"node_value","type":"text","text":"value\nμ=4","layer":"foreground","x":1800,"y":0,"width":220,"height":80}
+	],
+	"edges":[
+		{"id":"edge_null_affect","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_affect","toSide":"left","label":"from null"},
+		{"id":"edge_null_assertion","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_assertion","toSide":"left","label":"from null"},
+		{"id":"edge_null_image","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_image","toSide":"left","label":"from null"},
+		{"id":"edge_null_interpretation","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_interpretation","toSide":"left","label":"from null"},
+		{"id":"edge_null_proposition","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_proposition","toSide":"left","label":"from null"},
+		{"id":"edge_null_semantic","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_semantic","toSide":"left","label":"from null"},
+		{"id":"edge_null_value","class":"simlog","fromNode":"node_null","fromSide":"right","toNode":"node_value","toSide":"left","label":"from null"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

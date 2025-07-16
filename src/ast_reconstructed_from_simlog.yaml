@@ -1,0 +1,145 @@
+# ast_reconstructed_from_simlog.yaml
+#
+# 概要: SimLog系列データから再構築されたAST（抽象構造木）テンプレート
+# SimLogの進化系列・テンプレ構造をもとにAST（各ノード・slot・bridges定義）を復元し、
+# fold_macroやテンプレ設計の元データ、または構造可視化・検証用の基盤データとして利用。
+# 主な用途:
+#   - SimLog→AST変換パイプラインの出力（自動生成・再現性あり）
+#   - fold_macro再構成・構造解析・Canvas構築等の入力リソース
+# 編集ルール:
+#   - bridges: 各slot間の関係ラベル・from/to_slot指定・typeは通常"relation"
+#   - slots: 構造木ノード名（順番厳守・slot1→slotN）
+#   - mu: テンション値（系列毎の代表値・解析用）
+#   - name: テンプレ/ノード名（foldや語彙と一致）
+#   - fold_type: 未定義・用途依存（指定必須ではない）
+#   - 通常は自動生成のみで手動編集不要。手動修正時はスクリプト/本体テンプレとの整合性に注意
+# 例:
+# - bridges:
+#     - from_slot: slot1
+#       label: slot1→slot2
+#       to_slot: slot2
+#       type: relation
+#     - from_slot: slot2
+#       label: slot2→slot3
+#       to_slot: slot3
+#       type: relation
+#   fold_type: unspecified
+#   mu: 4.0
+#   name: 主張
+#   slots:
+#     - slot1
+#     - slot2
+#     - slot3
+
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 4.0
+  name: 主張
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 4.0
+  name: 命題
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 5.0
+  name: 意味
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 4.0
+  name: 値
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 5.0
+  name: 情動
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 5.0
+  name: 像
+  slots:
+  - slot1
+  - slot2
+  - slot3
+- bridges:
+  - from_slot: slot1
+    label: slot1→slot2
+    to_slot: slot2
+    type: relation
+  - from_slot: slot2
+    label: slot2→slot3
+    to_slot: slot3
+    type: relation
+  fold_type: unspecified
+  mu: 4.0
+  name: 解釈
+  slots:
+  - slot1
+  - slot2
+  - slot3

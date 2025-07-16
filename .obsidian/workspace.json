@@ -1,0 +1,318 @@
+{
+  "main": {
+    "id": "0eec25627052d3cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1af4580f0fc1f46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "988610e53e61df65",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "canvas/fold_dsl_series.dsl.canvas",
+                "viewState": {
+                  "x": 725,
+                  "y": 30,
+                  "zoom": -0.1525056870891817
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "fold_dsl_series.dsl"
+            }
+          },
+          {
+            "id": "457dde88bed25e0e",
+            "type": "leaf",
+            "state": {
+              "type": "cm-changelog-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "cf1839b79750285e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "canvas/fold_macro_ast_diff_canvas.canvas",
+                "viewState": {
+                  "x": 50,
+                  "y": 50,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "fold_macro_ast_diff_canvas"
+            }
+          },
+          {
+            "id": "84d535f0a2c1afd0",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "canvas/fold/template_lineage_canvas.canvas",
+                "viewState": {
+                  "x": 540,
+                  "y": 627.5,
+                  "zoom": -0.652898043052711
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "template_lineage_canvas"
+            }
+          },
+          {
+            "id": "d20efea5ee221a26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/chat_log_20250715.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "chat_log_20250715"
+            }
+          },
+          {
+            "id": "4ae5dd367d9a5a31",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "canvas/dsl/dsl_flow_canvas.canvas",
+                "viewState": {
+                  "x": 50,
+                  "y": 50,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "dsl_flow_canvas"
+            }
+          },
+          {
+            "id": "684bd0bd777d7894",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "canvas/dsl/dsl_phi-psi-mu_canvas.canvas",
+                "viewState": {
+                  "x": 50,
+                  "y": 50,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "dsl_phi-psi-mu_canvas"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5de8f4cd6c73a7db",
+    "type": "split",
+    "children": [
+      {
+        "id": "8809979e3363ac6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9b947e08b9adf61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1c5137d7eab3c31f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "ce4321c833842b02",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 704.5040512084961
+  },
+  "right": {
+    "id": "6e044f5c1f1f5fcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "97280f783c93a4de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c23c5b839495c0e6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "eval_zettels/SYS-001.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "SYS-001へのバックリンク"
+            }
+          },
+          {
+            "id": "dc2586e8a828dcf2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "eval_zettels/SYS-001.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "SYS-001からのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "7268c13ad532a25e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "f6e2121cc28e20e8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "eval_zettels/SYS-001.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "SYS-001のアウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "a9b947e08b9adf61",
+  "lastOpenFiles": [
+    "docs/views/dashboard/quickadd_template_ui_with_recommend.json",
+    "docs/views/dashboard/jump_trigger.html",
+    "docs/views/dashboard/fold_macro_from_recommend.yaml",
+    "docs/views/dashboard/canvas_recommendation_edges.json",
+    "docs/views/dashboard/canvas_core_tension_rays.json",
+    "docs/views/dashboard/recommend_cluster_groups.yaml",
+    "docs/views/dashboard/fold_macro_from_canvas.yaml",
+    "docs/views/README.md",
+    "docs/views/template_index.md",
+    "docs/uml/README.md",
+    "docs/ZdZ_fold_dsl-guide-v1.md",
+    "index.md",
+    "q2t_structure-overview.md",
+    "q2t-core-system-overview_PUML.png",
+    "README_FoldMacro_QuickAdd.md",
+    "Untitled.md",
+    "Welcome.md",
+    "config/README.md",
+    "docs/fold_macro_bridge_instantiated.dsl.md",
+    "docs/fold_macro_ast.dsl.md",
+    "scripts/normalize_fold_macro.py",
+    "scripts/register_to_fold_macro.py",
+    "macro/ZdZ_Vault_Structure.md",
+    "docs/dataview/fold_macro_filter.js",
+    "config/quickadd/templates/from_canvas_stub.md",
+    "config/quickadd/templates",
+    "canvas/simlog/simlog_dsl_series.canvas",
+    "canvas/fold/fold_phi_psi_mu_map.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_10.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_9.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_8.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_7.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_6.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_5.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_4.canvas",
+    "canvas/dsl/auto_from_dsl/fold_dsl_from_simlog_3.canvas",
+    "zettel/fold/stub_from_canvas/質問.md",
+    "zettel/fold/stub_from_canvas/譲歩.md",
+    "zettel/fold/stub_from_canvas/説明.md",
+    "zettel/fold/stub_from_canvas/感嘆.md",
+    "zettel/fold/stub_from_canvas/結論.md",
+    "zettel/fold/stub_from_canvas/定義.md",
+    "zettel/fold/stub_from_canvas/対照.md",
+    "zettel/fold/stub_from_canvas/対照_原因.md",
+    "zettel/fold/stub_from_canvas/否定.md",
+    "zettel/fold/stub_from_canvas/原因.md",
+    "zettel/fold/stub_from_canvas/前提.md"
+  ]
+}

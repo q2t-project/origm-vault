@@ -1,0 +1,842 @@
+{
+  "nodes": [
+    {
+      "id": "VaultRoot",
+      "text": "Vault Root",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": ".obsidian",
+      "text": ".obsidian",
+      "position": {
+        "x": 120,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins",
+      "text": "plugins",
+      "position": {
+        "x": 240,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_advanced-canvas",
+      "text": "advanced-canvas",
+      "position": {
+        "x": 360,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_canvas-mindmap",
+      "text": "canvas-mindmap",
+      "position": {
+        "x": 480,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_customjs",
+      "text": "customjs",
+      "position": {
+        "x": 600,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_dataview",
+      "text": "dataview",
+      "position": {
+        "x": 720,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_obsidian-advanced-uri",
+      "text": "obsidian-advanced-uri",
+      "position": {
+        "x": 840,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_obsidian-markmind",
+      "text": "obsidian-markmind",
+      "position": {
+        "x": 960,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_quickadd",
+      "text": "quickadd",
+      "position": {
+        "x": 80,
+        "y": 100
+      }
+    },
+    {
+      "id": ".obsidian_plugins_templater-obsidian",
+      "text": "templater-obsidian",
+      "position": {
+        "x": 200,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas",
+      "text": "canvas",
+      "position": {
+        "x": 320,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_derived",
+      "text": "derived",
+      "position": {
+        "x": 440,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_dsl",
+      "text": "dsl",
+      "position": {
+        "x": 560,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_dsl_auto_from_dsl",
+      "text": "auto_from_dsl",
+      "position": {
+        "x": 680,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_eval",
+      "text": "eval",
+      "position": {
+        "x": 800,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_fold",
+      "text": "fold",
+      "position": {
+        "x": 920,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_simlog",
+      "text": "simlog",
+      "position": {
+        "x": 40,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_tension",
+      "text": "tension",
+      "position": {
+        "x": 160,
+        "y": 280
+      }
+    },
+    {
+      "id": "canvas_ast",
+      "text": "ast",
+      "position": {
+        "x": 280,
+        "y": 280
+      }
+    },
+    {
+      "id": "config",
+      "text": "config",
+      "position": {
+        "x": 400,
+        "y": 460
+      }
+    },
+    {
+      "id": "config_quickadd",
+      "text": "quickadd",
+      "position": {
+        "x": 520,
+        "y": 460
+      }
+    },
+    {
+      "id": "docs",
+      "text": "docs",
+      "position": {
+        "x": 640,
+        "y": 460
+      }
+    },
+    {
+      "id": "docs_dataview",
+      "text": "dataview",
+      "position": {
+        "x": 760,
+        "y": 460
+      }
+    },
+    {
+      "id": "docs_uml",
+      "text": "uml",
+      "position": {
+        "x": 880,
+        "y": 460
+      }
+    },
+    {
+      "id": "docs_views",
+      "text": "views",
+      "position": {
+        "x": 0,
+        "y": 460
+      }
+    },
+    {
+      "id": "docs_views_dashboard",
+      "text": "dashboard",
+      "position": {
+        "x": 120,
+        "y": 460
+      }
+    },
+    {
+      "id": "fold_templates",
+      "text": "fold_templates",
+      "position": {
+        "x": 240,
+        "y": 460
+      }
+    },
+    {
+      "id": "fold_templates_abstraction",
+      "text": "abstraction",
+      "position": {
+        "x": 360,
+        "y": 460
+      }
+    },
+    {
+      "id": "fold_templates_assertion",
+      "text": "assertion",
+      "position": {
+        "x": 480,
+        "y": 460
+      }
+    },
+    {
+      "id": "fold_templates_branch",
+      "text": "branch",
+      "position": {
+        "x": 600,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_causation",
+      "text": "causation",
+      "position": {
+        "x": 720,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_concession",
+      "text": "concession",
+      "position": {
+        "x": 840,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_conclusion",
+      "text": "conclusion",
+      "position": {
+        "x": 960,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_concretization",
+      "text": "concretization",
+      "position": {
+        "x": 80,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_contradiction",
+      "text": "contradiction",
+      "position": {
+        "x": 200,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_contrast",
+      "text": "contrast",
+      "position": {
+        "x": 320,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_definition",
+      "text": "definition",
+      "position": {
+        "x": 440,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_dsl",
+      "text": "dsl",
+      "position": {
+        "x": 560,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_evaluation",
+      "text": "evaluation",
+      "position": {
+        "x": 680,
+        "y": 640
+      }
+    },
+    {
+      "id": "fold_templates_explanation",
+      "text": "explanation",
+      "position": {
+        "x": 800,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_interpretation",
+      "text": "interpretation",
+      "position": {
+        "x": 920,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_logical",
+      "text": "logical",
+      "position": {
+        "x": 40,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_meta",
+      "text": "meta",
+      "position": {
+        "x": 160,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_negation",
+      "text": "negation",
+      "position": {
+        "x": 280,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_null",
+      "text": "null",
+      "position": {
+        "x": 400,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_question",
+      "text": "question",
+      "position": {
+        "x": 520,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_tension",
+      "text": "tension",
+      "position": {
+        "x": 640,
+        "y": 820
+      }
+    },
+    {
+      "id": "fold_templates_transformation",
+      "text": "transformation",
+      "position": {
+        "x": 760,
+        "y": 820
+      }
+    },
+    {
+      "id": "macro",
+      "text": "macro",
+      "position": {
+        "x": 880,
+        "y": 820
+      }
+    },
+    {
+      "id": "macro_fold_macro",
+      "text": "fold_macro",
+      "position": {
+        "x": 0,
+        "y": 1000
+      }
+    },
+    {
+      "id": "macro_quickadd",
+      "text": "quickadd",
+      "position": {
+        "x": 120,
+        "y": 1000
+      }
+    },
+    {
+      "id": "macro_report",
+      "text": "report",
+      "position": {
+        "x": 240,
+        "y": 1000
+      }
+    },
+    {
+      "id": "scripts",
+      "text": "scripts",
+      "position": {
+        "x": 360,
+        "y": 1000
+      }
+    },
+    {
+      "id": "src",
+      "text": "src",
+      "position": {
+        "x": 480,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel",
+      "text": "zettel",
+      "position": {
+        "x": 600,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel_eval",
+      "text": "eval",
+      "position": {
+        "x": 720,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel_fold",
+      "text": "fold",
+      "position": {
+        "x": 840,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel_fold_dsl",
+      "text": "dsl",
+      "position": {
+        "x": 960,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel_fold_dsl_reverse_from_canvas",
+      "text": "reverse_from_canvas",
+      "position": {
+        "x": 80,
+        "y": 1000
+      }
+    },
+    {
+      "id": "zettel_fold_dsl_from_zettel",
+      "text": "from_zettel",
+      "position": {
+        "x": 200,
+        "y": 1180
+      }
+    },
+    {
+      "id": "zettel_fold_auto_generated",
+      "text": "auto_generated",
+      "position": {
+        "x": 320,
+        "y": 1180
+      }
+    },
+    {
+      "id": "zettel_morph",
+      "text": "morph",
+      "position": {
+        "x": 440,
+        "y": 1180
+      }
+    },
+    {
+      "id": "zettel_simlog",
+      "text": "simlog",
+      "position": {
+        "x": 560,
+        "y": 1180
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": ".obsidian_to_.obsidian_plugins",
+      "fromNode": ".obsidian",
+      "toNode": ".obsidian_plugins",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_advanced-canvas",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_advanced-canvas",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_canvas-mindmap",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_canvas-mindmap",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_customjs",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_customjs",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_dataview",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_dataview",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_obsidian-advanced-uri",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_obsidian-advanced-uri",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_obsidian-markmind",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_obsidian-markmind",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_quickadd",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_quickadd",
+      "label": ""
+    },
+    {
+      "id": ".obsidian_plugins_to_.obsidian_plugins_templater-obsidian",
+      "fromNode": ".obsidian_plugins",
+      "toNode": ".obsidian_plugins_templater-obsidian",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_derived",
+      "fromNode": "canvas",
+      "toNode": "canvas_derived",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_dsl",
+      "fromNode": "canvas",
+      "toNode": "canvas_dsl",
+      "label": ""
+    },
+    {
+      "id": "canvas_dsl_to_canvas_dsl_auto_from_dsl",
+      "fromNode": "canvas_dsl",
+      "toNode": "canvas_dsl_auto_from_dsl",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_eval",
+      "fromNode": "canvas",
+      "toNode": "canvas_eval",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_fold",
+      "fromNode": "canvas",
+      "toNode": "canvas_fold",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_simlog",
+      "fromNode": "canvas",
+      "toNode": "canvas_simlog",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_tension",
+      "fromNode": "canvas",
+      "toNode": "canvas_tension",
+      "label": ""
+    },
+    {
+      "id": "canvas_to_canvas_ast",
+      "fromNode": "canvas",
+      "toNode": "canvas_ast",
+      "label": ""
+    },
+    {
+      "id": "config_to_config_quickadd",
+      "fromNode": "config",
+      "toNode": "config_quickadd",
+      "label": ""
+    },
+    {
+      "id": "docs_to_docs_dataview",
+      "fromNode": "docs",
+      "toNode": "docs_dataview",
+      "label": ""
+    },
+    {
+      "id": "docs_to_docs_uml",
+      "fromNode": "docs",
+      "toNode": "docs_uml",
+      "label": ""
+    },
+    {
+      "id": "docs_to_docs_views",
+      "fromNode": "docs",
+      "toNode": "docs_views",
+      "label": ""
+    },
+    {
+      "id": "docs_views_to_docs_views_dashboard",
+      "fromNode": "docs_views",
+      "toNode": "docs_views_dashboard",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_abstraction",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_abstraction",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_assertion",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_assertion",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_branch",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_branch",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_causation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_causation",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_concession",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_concession",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_conclusion",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_conclusion",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_concretization",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_concretization",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_contradiction",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_contradiction",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_contrast",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_contrast",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_definition",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_definition",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_dsl",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_dsl",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_evaluation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_evaluation",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_explanation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_explanation",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_interpretation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_interpretation",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_logical",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_logical",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_meta",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_meta",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_negation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_negation",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_null",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_null",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_question",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_question",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_tension",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_tension",
+      "label": ""
+    },
+    {
+      "id": "fold_templates_to_fold_templates_transformation",
+      "fromNode": "fold_templates",
+      "toNode": "fold_templates_transformation",
+      "label": ""
+    },
+    {
+      "id": "macro_to_macro_fold_macro",
+      "fromNode": "macro",
+      "toNode": "macro_fold_macro",
+      "label": ""
+    },
+    {
+      "id": "macro_to_macro_quickadd",
+      "fromNode": "macro",
+      "toNode": "macro_quickadd",
+      "label": ""
+    },
+    {
+      "id": "macro_to_macro_report",
+      "fromNode": "macro",
+      "toNode": "macro_report",
+      "label": ""
+    },
+    {
+      "id": "zettel_to_zettel_eval",
+      "fromNode": "zettel",
+      "toNode": "zettel_eval",
+      "label": ""
+    },
+    {
+      "id": "zettel_to_zettel_fold",
+      "fromNode": "zettel",
+      "toNode": "zettel_fold",
+      "label": ""
+    },
+    {
+      "id": "zettel_fold_to_zettel_fold_dsl",
+      "fromNode": "zettel_fold",
+      "toNode": "zettel_fold_dsl",
+      "label": ""
+    },
+    {
+      "id": "zettel_fold_dsl_to_zettel_fold_dsl_reverse_from_canvas",
+      "fromNode": "zettel_fold_dsl",
+      "toNode": "zettel_fold_dsl_reverse_from_canvas",
+      "label": ""
+    },
+    {
+      "id": "zettel_fold_dsl_to_zettel_fold_dsl_from_zettel",
+      "fromNode": "zettel_fold_dsl",
+      "toNode": "zettel_fold_dsl_from_zettel",
+      "label": ""
+    },
+    {
+      "id": "zettel_fold_to_zettel_fold_auto_generated",
+      "fromNode": "zettel_fold",
+      "toNode": "zettel_fold_auto_generated",
+      "label": ""
+    },
+    {
+      "id": "zettel_to_zettel_morph",
+      "fromNode": "zettel",
+      "toNode": "zettel_morph",
+      "label": ""
+    },
+    {
+      "id": "zettel_to_zettel_simlog",
+      "fromNode": "zettel",
+      "toNode": "zettel_simlog",
+      "label": ""
+    }
+  ]
+}

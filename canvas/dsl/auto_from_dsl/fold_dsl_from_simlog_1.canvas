@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "結論",
+      "text": "結論",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "前提",
+      "text": "前提",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_1",
+      "text": "結論→前提 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "結論_to_dsl",
+      "fromNode": "結論",
+      "toNode": "fold_dsl_from_simlog_1",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_前提",
+      "fromNode": "fold_dsl_from_simlog_1",
+      "toNode": "前提",
+      "label": "to"
+    }
+  ]
+}

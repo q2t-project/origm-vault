@@ -1,0 +1,5 @@
+clusters:
+  - name: cluster_A
+    members: [define, rule, principle]
+  - name: cluster_B
+    members: [state, effect, transition]

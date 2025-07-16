@@ -1,0 +1,24 @@
+digraph TemplateEvolution {
+  rankdir=LR;
+  node [shape=box, style=filled, fontname="Arial"];
+  "対照" -> "対照-派生1" [label="Δμ=0.10", color=red];
+  "対照-派生1" [fillcolor="lightyellow"];
+  "原因" -> "原因-派生1" [label="Δμ=0.10", color=red];
+  "原因-派生1" [fillcolor="lightyellow"];
+  "結論" -> "結論-派生1" [label="Δμ=0.10", color=red];
+  "結論-派生1" [fillcolor="lightyellow"];
+  "前提" -> "前提-派生1" [label="Δμ=0.10", color=red];
+  "前提-派生1" [fillcolor="lightyellow"];
+  "定義" -> "定義-派生1" [label="Δμ=0.10", color=red];
+  "定義-派生1" [fillcolor="lightyellow"];
+  "譲歩" -> "譲歩-派生1" [label="Δμ=0.10", color=red];
+  "譲歩-派生1" [fillcolor="lightyellow"];
+  "否定" -> "否定-派生1" [label="Δμ=0.10", color=red];
+  "否定-派生1" [fillcolor="lightyellow"];
+  "説明" -> "説明-派生1" [label="Δμ=0.10", color=red];
+  "説明-派生1" [fillcolor="lightyellow"];
+  "質問" -> "質問-派生1" [label="Δμ=0.10", color=red];
+  "質問-派生1" [fillcolor="lightyellow"];
+  "感嘆" -> "感嘆-派生1" [label="Δμ=0.10", color=red];
+  "感嘆-派生1" [fillcolor="lightyellow"];
+}

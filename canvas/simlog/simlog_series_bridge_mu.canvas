@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"bridge_node_0","type":"text","text":"前提","background":"gray","x":0,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_1","type":"text","text":"原因","background":"lightgreen","x":300,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_2","type":"text","text":"否定","background":"gray","x":600,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_3","type":"text","text":"定義","background":"lightblue","x":900,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_4","type":"text","text":"対照","background":"gray","x":1200,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_5","type":"text","text":"対照_原因","background":"gray","x":1500,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_6","type":"text","text":"感嘆","background":"gray","x":1800,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_7","type":"text","text":"結論","background":"lightgreen","x":2100,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_8","type":"text","text":"説明","background":"lightgreen","x":2400,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_9","type":"text","text":"譲歩","background":"gray","x":2700,"y":0,"width":200,"height":100},
+		{"id":"bridge_node_10","type":"text","text":"質問","background":"tomato","x":3000,"y":0,"width":200,"height":100}
+	],
+	"edges":[
+		{"id":"bridge_edge_mu_0","type":"arrow","fromNode":"bridge_node_5","fromSide":"left","toNode":"bridge_node_4","toSide":"right","label":"μ+1"},
+		{"id":"bridge_edge_mu_1","type":"arrow","fromNode":"bridge_node_4","fromSide":"left","toNode":"bridge_node_1","toSide":"right","label":"μ+1"},
+		{"id":"bridge_edge_mu_2","type":"arrow","fromNode":"bridge_node_1","fromSide":"right","toNode":"bridge_node_7","toSide":"left","label":"μ+1"},
+		{"id":"bridge_edge_mu_3","type":"arrow","fromNode":"bridge_node_7","fromSide":"left","toNode":"bridge_node_0","toSide":"right","label":"μ+1"},
+		{"id":"bridge_edge_mu_4","type":"arrow","fromNode":"bridge_node_0","fromSide":"right","toNode":"bridge_node_3","toSide":"left","label":"μ+1"},
+		{"id":"bridge_edge_mu_5","type":"arrow","fromNode":"bridge_node_3","fromSide":"right","toNode":"bridge_node_9","toSide":"left","label":"μ+1"},
+		{"id":"bridge_edge_mu_6","type":"arrow","fromNode":"bridge_node_9","fromSide":"left","toNode":"bridge_node_2","toSide":"right","label":"μ+1"},
+		{"id":"bridge_edge_mu_7","type":"arrow","fromNode":"bridge_node_2","fromSide":"right","toNode":"bridge_node_8","toSide":"left","label":"μ+1"},
+		{"id":"bridge_edge_mu_8","type":"arrow","fromNode":"bridge_node_8","fromSide":"right","toNode":"bridge_node_10","toSide":"left","label":"μ+1"},
+		{"id":"bridge_edge_mu_9","type":"arrow","fromNode":"bridge_node_10","fromSide":"left","toNode":"bridge_node_6","toSide":"right","label":"μ+1"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

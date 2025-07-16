@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "定義",
+      "text": "定義",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "譲歩",
+      "text": "譲歩",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_5",
+      "text": "定義→譲歩 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "定義_to_dsl",
+      "fromNode": "定義",
+      "toNode": "fold_dsl_from_simlog_5",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_譲歩",
+      "fromNode": "fold_dsl_from_simlog_5",
+      "toNode": "譲歩",
+      "label": "to"
+    }
+  ]
+}

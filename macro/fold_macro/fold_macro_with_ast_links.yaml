@@ -1,0 +1,321 @@
+- bridges:
+  - from_slot: 主張
+    label: 主張に対する反論
+    to: F02
+    to_slot: 反論対象
+    type: contradiction
+  id: F01
+  label: 構造テンプレ
+  slots:
+  - 主張
+  - 根拠
+  - 帰結
+  tension: 2
+  type: structure
+- bridges:
+  - from_slot: 反証例
+    label: 反証例を起点に新たな展開
+    to: F03
+    to_slot: 前提
+    type: transformation
+  id: F02
+  label: 反論テンプレ
+  slots:
+  - 反論対象
+  - 反論内容
+  - 反証例
+  tension: 3
+  type: refutation
+- id: F03
+  label: 展開テンプレ
+  slots:
+  - 前提
+  - 補助要素
+  - 展開先
+  tension: 4
+  type: expansion
+- dsl:
+    from: 'null'
+    mu: 0.73
+    mutation: base_init
+    psi: refutation
+    state: stable
+    to: unknown
+  eval:
+    comment: 初期評価：テンション構造は安定。分類・進化が明確。
+    last_eval: '2025-07-13'
+    mu_score: 0.73
+    psi_focus: refutation
+    tension_state: stable
+  from:
+  - 対照
+  id: 対照_原因
+  label: 対照 → 原因
+  morph: 推論
+  note: 比較から因果への進化
+  tags:
+  - μ=3
+  - logic
+  tension: 3
+  to:
+  - 原因
+  type: 因果
+  μ_axis: 相互作用
+  φ_axis: 比較
+  ψ_axis: 推論
+- dsl:
+    from: 対照_原因
+    mu: 0.1
+    mutation: unknown
+    state: dormant
+    type: unspecified
+  eval:
+    comment: 初期比較対象。意味テンションは極低。
+    last_eval: '2025-07-13'
+    mu_score: 0.1
+    psi_focus: null
+    tension_state: dormant
+  id: 対照
+  name: 対照
+  μ_axis: 'null'
+  φ_axis: 比較
+  ψ_axis: 'null'
+- dsl:
+    from: 対照
+    mu: 0.5
+    mutation: unknown
+    state: stable
+    type: unspecified
+  eval:
+    comment: 原因構造として中程度のテンション。射の終点候補。
+    last_eval: '2025-07-13'
+    mu_score: 0.5
+    psi_focus: refutation
+    tension_state: stable
+  id: 原因
+  name: 原因
+  μ_axis: 相互作用
+  φ_axis: 因果
+  ψ_axis: 推論
+- dsl:
+    from: 原因
+    mu: 0.8
+    mutation: unknown
+    state: strong
+    type: unspecified
+  eval:
+    comment: 高テンション終点。議論のまとめ役。
+    last_eval: '2025-07-13'
+    mu_score: 0.8
+    psi_focus: assertion
+    tension_state: strong
+  id: 結論
+  name: 結論
+  μ_axis: 収束
+  φ_axis: 帰結
+  ψ_axis: 推論
+- dsl:
+    from: 結論
+    mu: 0.4
+    mutation: unknown
+    state: moderate
+    type: unspecified
+  eval:
+    comment: 議論の出発点としてテンション中程度。
+    last_eval: '2025-07-13'
+    mu_score: 0.4
+    psi_focus: foundation
+    tension_state: moderate
+  id: 前提
+  name: 前提
+  μ_axis: 支持
+  φ_axis: 準備
+  ψ_axis: 条件
+- dsl:
+    from: 前提
+    mu: 0.3
+    mutation: unknown
+    state: low
+    type: unspecified
+  eval:
+    comment: 論証ではないが安定構造。
+    last_eval: '2025-07-13'
+    mu_score: 0.3
+    psi_focus: definition
+    tension_state: low
+  id: 定義
+  name: 定義
+  μ_axis: 静止
+  φ_axis: 同一
+  ψ_axis: 明確化
+- dsl:
+    from: 定義
+    mu: 0.6
+    mutation: unknown
+    state: unstable
+    type: unspecified
+  eval:
+    comment: 反論的だが衝突回避的。μ高め。
+    last_eval: '2025-07-13'
+    mu_score: 0.6
+    psi_focus: concession
+    tension_state: unstable
+  id: 譲歩
+  name: 譲歩
+  μ_axis: 緩衝
+  φ_axis: 対立
+  ψ_axis: 修正
+- dsl:
+    from: 譲歩
+    mu: 0.9
+    mutation: unknown
+    state: critica
+    type: unspecified
+  eval:
+    comment: 最大テンション。議論の衝突点。
+    last_eval: '2025-07-13'
+    mu_score: 0.9
+    psi_focus: refutation
+    tension_state: critical
+  id: 否定
+  name: 否定
+  μ_axis: 断絶
+  φ_axis: 否定
+  ψ_axis: 反駁
+- dsl:
+    from: 否定
+    mu: 0.55
+    mutation: unknown
+    state: norma
+    type: unspecified
+  eval:
+    comment: 背景補完テンプレ。μ中程度。
+    last_eval: '2025-07-13'
+    mu_score: 0.55
+    psi_focus: explanation
+    tension_state: normal
+  id: 説明
+  name: 説明
+  μ_axis: 拡張
+  φ_axis: 展開
+  ψ_axis: 解釈
+- dsl:
+    from: 説明
+    mu: 0.35
+    mutation: unknown
+    state: inquiry
+    type: unspecified
+  eval:
+    comment: 探索的テンプレ。定義前構造。
+    last_eval: '2025-07-13'
+    mu_score: 0.35
+    psi_focus: inquiry
+    tension_state: inquiry
+  id: 質問
+  name: 質問
+  μ_axis: 未定義
+  φ_axis: 不明
+  ψ_axis: 探求
+- dsl:
+    from: 質問
+    mu: 0.25
+    mutation: unknown
+    state: expressive
+    type: unspecified
+  eval:
+    comment: 非論理的テンプレ。枠外扱い。
+    last_eval: '2025-07-13'
+    mu_score: 0.25
+    psi_focus: expression
+    tension_state: expressive
+  id: 感嘆
+  name: 感嘆
+  μ_axis: 発散
+  φ_axis: 感情
+  ψ_axis: 表現
+- fold_type: express
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: simlog.null.01
+  title: 仮テンプレ Express
+- fold_type: compare
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: simlog.null.02
+  title: 仮テンプレ Compare
+- fold_type: define
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: simlog.null.03
+  title: 仮テンプレ Define
+- fold_type: explain
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: simlog.null.04
+  title: 仮テンプレ Explain
+- fold_type: inquire
+  mu: 0
+  phi: 0
+  psi: 0
+  series_id: simlog.null.05
+  title: 仮テンプレ Inquire
+- fold_type: 結論
+  from: 原因
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.原因_結論
+  title: SimLog派生テンプレ（原因→結論）
+  to: null
+- fold_type: 質問
+  from: 否定
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.否定_質問
+  title: SimLog派生テンプレ（否定→質問）
+  to: null
+- fold_type: 説明
+  from: 定義
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.定義_説明
+  title: SimLog派生テンプレ（定義→説明）
+  to: null
+- fold_type: 否定
+  from: 結論
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.結論_否定
+  title: SimLog派生テンプレ（結論→否定）
+  to: null
+- fold_type: 質問
+  from: 結論
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.結論_質問
+  title: SimLog派生テンプレ（結論→質問）
+  to: null
+- fold_type: 定義
+  from: 説明
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.説明_定義
+  title: SimLog派生テンプレ（説明→定義）
+  to: null
+- fold_type: 説明
+  from: 質問
+  mu: 1
+  phi: 0
+  psi: 0
+  series_id: simlog.ast.質問_説明
+  title: SimLog派生テンプレ（質問→説明）
+  to: null

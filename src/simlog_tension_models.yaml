@@ -1,0 +1,55 @@
+# simlog_tension_models.yaml
+#
+# 概要: Origm Vault における「SimLog系列のテンション変化モデル」定義
+# このファイルは、各fold_typeのZettel進化系列に沿って「μテンション値の推移パターン」をDSL的に記述したものです。
+# 主な用途:
+#   - SimLog系列Zettel/Canvas等の「μテンション推移可視化」「進化系列テンション評価」の自動化
+#   - テンションモデルの解析・パターン抽出・テンプレ評価スクリプトへの入力
+# 編集ルール:
+#   - interpretation: モデル全体の意味・特徴を日本語で簡潔に記述
+#   - model_id: シリーズ一意ID（進化ペア名・命名規則に従う）
+#   - mu_change: テンションの増減傾向（increasing/decreasing/stableなど）
+#   - mu_series: 各ステップごとのfold_type/μ/順序/title
+#   - series_id: 同系列でまとめるためのID（将来の分析等に活用）
+# 追加・編集時は必ずinterpretation/series_id/各ステップ整合性を確認
+# 例:
+# - interpretation: ...
+#   model_id: null_to_transformation
+#   mu_change: decreasing
+#   mu_series:
+#     - fold_type: 'null'
+#       mu: 0.9
+#       step: 1
+#       title: 否定
+#     - fold_type: transformation
+#       mu: 0.55
+#       step: 2
+#       title: 説明
+#   series_id: series_01
+
+- interpretation: 未定義構造が意味確定によりテンション低下
+  model_id: null_to_transformation
+  mu_change: decreasing
+  mu_series:
+  - fold_type: 'null'
+    mu: 0.9
+    step: 1
+    title: 否定
+  - fold_type: transformation
+    mu: 0.55
+    step: 2
+    title: 説明
+  series_id: series_01
+- interpretation: 「説明」による意味確定から「問い」による問題再提示でテンションがさらに沈静化
+  model_id: transformation_to_contradiction
+  mu_change: decreasing
+  mu_series:
+  - fold_type: transformation
+    mu: 0.55
+    step: 1
+    title: 説明
+  - fold_type: contradiction
+    mu: 0.35
+    step: 2
+    title: 質問
+  series_id: series_01

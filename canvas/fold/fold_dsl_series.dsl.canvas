@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"T0","type":"text","text":"初期化テンプレ","x":0,"y":0,"width":250,"height":60},
+		{"id":"T2","type":"text","text":"反論テンプレ","x":600,"y":0,"width":250,"height":60},
+		{"id":"T3","type":"text","text":"展開テンプレ","x":900,"y":0,"width":250,"height":60},
+		{"id":"T4","type":"text","text":"解釈テンプレ","x":1200,"y":0,"width":250,"height":60},
+		{"id":"T1","type":"text","text":"構造テンプレ","x":300,"y":0,"width":250,"height":60}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

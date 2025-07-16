@@ -1,0 +1,52 @@
+# template_lineage.dsl.yaml
+# 
+# 概要: Origm Vault の語彙進化系列（fold/morph/SimLog展開用）のDSL定義テンプレート
+# このファイルは「語彙やfold構造の進化・変異パターン」を記述したリネージュ（系列）リストです。
+# 主に gen_dsl_instance.py などの自動生成スクリプトや、テンプレ同期スクリプトで参照されます。
+# 編集時の注意: 
+# - 各エントリは「from（元）」「to（進化先）」「μ（テンション変化）」「mutation（進化タイプ）」を記載
+# - typeは今後の拡張を想定して "vocab_lineage" で固定
+# - 追加・編集時は必ず各フィールドの意味と整合性をチェックすること
+# 
+# 例: 
+# - from: 定義
+#   mu: 0.3 → 4.0
+#   mutation: generalization
+#   to: 主張
+#   type: vocab_lineage
+
+- from: 定義
+  mu: 0.3 → 4.0
+  mutation: generalization
+  to: 主張
+  type: vocab_lineage
+- from: 主張
+  mu: 4.0 → 4.0
+  mutation: clarification
+  to: 命題
+  type: vocab_lineage
+- from: 解釈
+  mu: 4.0 → 5.0
+  mutation: abstraction
+  to: 意味
+  type: vocab_lineage
+- from: 意味
+  mu: 5.0 → 4.0
+  mutation: evaluation
+  to: 値
+  type: vocab_lineage
+- from: 値
+  mu: 4.0 → 5.0
+  mutation: affective_shift
+  to: 情動
+  type: vocab_lineage
+- from: 情動
+  mu: 5.0 → 5.0
+  mutation: concretization
+  to: 像
+  type: vocab_lineage
+- from: 定義
+  mu: 0.3 → 4.0
+  mutation: interpretive
+  to: 解釈
+  type: vocab_lineage

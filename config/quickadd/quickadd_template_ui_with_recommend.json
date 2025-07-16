@@ -1,0 +1,167 @@
+[
+  {
+    "name": "morph_stage_1→morph_stage_2",
+    "μ": 1,
+    "cluster_id": 0,
+    "distance": 3.045,
+    "tension_label": "low-tension",
+    "recommended": [
+      "φ=1,→φ=1,",
+      "φ=1,→φ=2,"
+    ],
+    "similarities": [
+      1.0,
+      0.943
+    ]
+  },
+  {
+    "name": "morph_stage_2→morph_stage_3",
+    "μ": 2,
+    "cluster_id": 1,
+    "distance": 1.314,
+    "tension_label": "normal",
+    "recommended": [
+      "φ=1,→φ=2,",
+      "φ=2,→φ=3,"
+    ],
+    "similarities": [
+      1.0,
+      0.995
+    ]
+  },
+  {
+    "name": "morph_stage_3→morph_stage_4",
+    "μ": 3,
+    "cluster_id": 2,
+    "distance": 0.426,
+    "tension_label": "medium-tension",
+    "recommended": [
+      "φ=2,→φ=3,",
+      "φ=3,→φ=4,"
+    ],
+    "similarities": [
+      1.0,
+      0.999
+    ]
+  },
+  {
+    "name": "morph_stage_4→morph_stage_5",
+    "μ": 4,
+    "cluster_id": 3,
+    "distance": 2.153,
+    "tension_label": "high-tension",
+    "recommended": [
+      "φ=3,→φ=4,",
+      "φ=4,→φ=5,"
+    ],
+    "similarities": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "morph_stage_5→morph_stage_6",
+    "μ": 5,
+    "cluster_id": 4,
+    "distance": 3.885,
+    "tension_label": "high-tension",
+    "recommended": [
+      "φ=4,→φ=5,",
+      "φ=3,→φ=4,"
+    ],
+    "similarities": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "φ=0,→φ=0,",
+    "μ": 0,
+    "cluster_id": 0,
+    "distance": 4.264,
+    "tension_label": "low-tension",
+    "recommended": [
+      "φ=4,→φ=5,",
+      "φ=3,→φ=4,"
+    ],
+    "similarities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "φ=1,→φ=1,",
+    "μ": 1,
+    "cluster_id": 0,
+    "distance": 3.045,
+    "tension_label": "low-tension",
+    "recommended": [
+      "morph_stage_1→morph_stage_2",
+      "φ=1,→φ=2,"
+    ],
+    "similarities": [
+      1.0,
+      0.943
+    ]
+  },
+  {
+    "name": "φ=1,→φ=2,",
+    "μ": 2,
+    "cluster_id": 1,
+    "distance": 1.314,
+    "tension_label": "normal",
+    "recommended": [
+      "morph_stage_2→morph_stage_3",
+      "φ=2,→φ=3,"
+    ],
+    "similarities": [
+      1.0,
+      0.995
+    ]
+  },
+  {
+    "name": "φ=2,→φ=3,",
+    "μ": 3,
+    "cluster_id": 2,
+    "distance": 0.426,
+    "tension_label": "medium-tension",
+    "recommended": [
+      "morph_stage_3→morph_stage_4",
+      "φ=3,→φ=4,"
+    ],
+    "similarities": [
+      1.0,
+      0.999
+    ]
+  },
+  {
+    "name": "φ=3,→φ=4,",
+    "μ": 4,
+    "cluster_id": 3,
+    "distance": 2.153,
+    "tension_label": "high-tension",
+    "recommended": [
+      "morph_stage_4→morph_stage_5",
+      "φ=4,→φ=5,"
+    ],
+    "similarities": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "φ=4,→φ=5,",
+    "μ": 5,
+    "cluster_id": 4,
+    "distance": 3.885,
+    "tension_label": "high-tension",
+    "recommended": [
+      "morph_stage_5→morph_stage_6",
+      "φ=3,→φ=4,"
+    ],
+    "similarities": [
+      1.0,
+      1.0
+    ]
+  }
+]

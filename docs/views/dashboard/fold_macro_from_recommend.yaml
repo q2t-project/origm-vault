@@ -1,0 +1,12 @@
+- name: fold_macro_define_rule
+  type: define
+  ψ: rule
+  μ: 3
+- name: fold_macro_state_effect
+  type: state
+  ψ: effect
+  μ: 2
+- name: fold_macro_cause_outcome
+  type: cause
+  ψ: outcome
+  μ: 2

@@ -1,0 +1,12 @@
+﻿# ast_type_transition_matrix.csv
+# 概要: ASTノードの型遷移行列。fold_typeごとの許容遷移（1=可, 0=不可）を定義。
+# 主な用途:
+#   - fold_macro/SimLog/テンプレ自動生成時の型整合性チェック
+#   - 状態遷移パスの検証やDSL展開、シミュレーション等
+# 編集時注意: 行・列ラベル名の揺れに注意。追記・拡張時は必ずDSL側仕様と連携。
+
+,assertion,contradiction,null,transformation
+assertion,0,0,0,1
+contradiction,0,0,0,1
+null,0,1,0,0
+transformation,1,1,1,1

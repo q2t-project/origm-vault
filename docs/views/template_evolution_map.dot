@@ -1,0 +1,20 @@
+digraph G {
+  "  否定";
+  "  定義";
+  "  結論";
+  "  説明";
+  "  質問";
+  "原因";
+  "否定";
+  "定義";
+  "結論";
+  "説明";
+  "質問";
+  "原因" -> "  結論" [label="ast_diff"];
+  "否定" -> "  質問" [label="ast_diff"];
+  "定義" -> "  説明" [label="ast_diff"];
+  "結論" -> "  否定" [label="ast_diff"];
+  "結論" -> "  質問" [label="ast_diff"];
+  "説明" -> "  定義" [label="ast_diff"];
+  "質問" -> "  説明" [label="ast_diff"];
+}

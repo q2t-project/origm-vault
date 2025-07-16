@@ -1,0 +1,65 @@
+# simlog_eval_to_template.dsl.yaml
+#
+# 概要: SimLog評価テンプレから推薦テンプレへのマッピング定義（DSL形式）
+# このファイルは、各語彙・fold構造に対する「評価に基づくテンプレ推薦ルール」をDSLで記述したもの。
+# 主な用途:
+#   - SimLog系Zettelやテンプレ評価スクリプトでの「評価→テンプレ進化」自動化
+#   - recommend_eval_template型テンプレの生成やマッピング時の参照
+# 編集ルール:
+#   - from: 評価元テンプレ（語彙やfold名、主に日本語）
+#   - mu: μテンション値（進化前→進化後）、通常変化がないもの（例: 4→4）
+#   - mutation: "evaluation_based"（評価由来進化固定）
+#   - state: recommended（評価推奨状態固定）
+#   - to: 推薦先テンプレ（通常同一だが将来分岐可）
+#   - type: recommend_eval_template（拡張可）
+# 追加・編集時はfrom/to/μ値整合性、mutation固定、重複禁止に注意
+# 例:
+# - from: 主張
+#   mu: 4 → 4
+#   mutation: evaluation_based
+#   state: recommended
+#   to: 主張
+#   type: recommend_eval_template
+
+- from: 主張
+  mu: 4 → 4
+  mutation: evaluation_based
+  state: recommended
+  to: 主張
+  type: recommend_eval_template
+- from: 命題
+  mu: 4 → 4
+  mutation: evaluation_based
+  state: recommended
+  to: 命題
+  type: recommend_eval_template
+- from: 意味
+  mu: 5 → 5
+  mutation: evaluation_based
+  state: recommended
+  to: 意味
+  type: recommend_eval_template
+- from: 値
+  mu: 4 → 4
+  mutation: evaluation_based
+  state: recommended
+  to: 値
+  type: recommend_eval_template
+- from: 情動
+  mu: 5 → 5
+  mutation: evaluation_based
+  state: recommended
+  to: 情動
+  type: recommend_eval_template
+- from: 像
+  mu: 5 → 5
+  mutation: evaluation_based
+  state: recommended
+  to: 像
+  type: recommend_eval_template
+- from: 解釈
+  mu: 4 → 4
+  mutation: evaluation_based
+  state: recommended
+  to: 解釈
+  type: recommend_eval_template

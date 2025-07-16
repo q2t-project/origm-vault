@@ -1,0 +1,438 @@
+# sdl_lexicon.yaml
+#
+# 概要: Origm VaultにおけるSDL用語辞書（null語彙定義群）
+# SDL（構造記述言語）やfold_macro等で用いる「null状態」を表現する語彙・属性値の定義リスト。
+# 各項目は用途・出現元・定義・表記（日本語ラベル）などを記述。
+# 主な用途:
+#   - fold_macro.yaml等のテンプレ生成
+#   - SimLog/Zettel/Canvas等でのnull構造自動判定・分岐
+#   - SDLコア語彙の辞書・自動付与・翻訳層として活用
+# 編集ルール:
+#   - source: 対応foldやZettel等のソース（ファイル名・ID）
+#   - 使用場面: この語彙が実際に使われるテンプレ/構造/システム
+#   - 定義: 用語の明確な定義
+#   - 表記: 日本語ラベル（UIや出力で使う場合も）
+#   - 語彙追加・定義修正時は必ず他ファイルとの整合性を確認
+#   - 必要に応じて語彙分類（null/init/blank/undecided/placeholder等）を拡張可能
+# 
+# 例:
+# null語彙:
+#   - init:
+#       source: [fold/null-init, Z000_init]
+#       使用場面: [fold_macro, evaluation, SimLog, DSL]
+#       定義: foldテンプレやZettelが生成直後でまだ構造・型・意味が確定していない状態。
+#       表記: 初期化
+
+null語彙:
+- init:
+    source:
+    - fold/null-init
+    - Z000_init
+    使用場面:
+    - fold_macro
+    - evaluation
+    - SimLog
+    - DSL
+    定義: foldテンプレやZettelが生成直後でまだ構造・型・意味が確定していない状態。意味テンション=0であり、進化の出発点を明示する。
+    表記: 初期化
+- blank:
+    source:
+    - fold/null-blank
+    - Z000_blank
+    使用場面:
+    - fold_macro
+    - Zettel
+    - template_seed
+    定義: 構造的に意味や型をあえて未設定とし、保留・開放状態を保つための意図的な空欄。後続の編集やテンプレ分岐の余地として用いられる。
+    表記: 空白
+- undecided:
+    source:
+    - fold/null-undecided
+    - Z000_undecided
+    使用場面:
+    - fold_macro
+    - evaluation
+    - DSL
+    定義: 構造や意味が途中段階で分岐・判断待ちとなっている状態。fold_typeの未決定、評価テンプレの未確定項目、テンション分岐における選択保留などを含む。
+    表記: 未決
+- 'null':
+    source:
+    - fold/null-null
+    - Z000_null
+    使用場面:
+    - fold_macro
+    - DSL
+    - SimLog
+    - Canvas構造
+    定義: 構造そのものが未生成・不在であることを示す状態。fold_macroやテンプレDSLの記述において、構造的に存在しないことを明示する。SimLogやCanvasではグレーで可視化される。
+    表記: 無
+- placeholder:
+    source:
+    - fold/null-placeholder
+    - Z000_placeholder
+    使用場面:
+    - fold_macro
+    - template_seed
+    - DSL
+    定義: 後から意味・構造を与える前提で一時的に配置された仮ノード・仮要素。foldテンプレの部分埋めやテンプレ自動生成時の空スロットに用いられる。
+    表記: 仮置
+- detached:
+    source:
+    - fold/null-detached
+    - Z000_detached
+    使用場面:
+    - fold_macro
+    - DSL
+    - Canvas構造
+    定義: 本来接続されていた構造から切り離され、独立・孤立した状態。Zettelのリンク切れ、foldテンプレの破断、DSL構文の参照漏れなどに該当する。
+    表記: 分離
+- obsolete:
+    source:
+    - fold/null-obsolete
+    - Z000_obsolete
+    使用場面:
+    - fold_macro
+    - SimLog
+    - Canvas構造
+    定義: かつて意味や機能を持っていたが、現在では無効・不要となった構造状態。テンプレ進化後の旧構造、Zettelの脱リンク化要素などが該当する。
+    表記: 廃棄
+コア語彙:
+- structure:
+    source:
+    - Z001_core
+    - fold/構造テンプレ
+    φψμ: φ
+    テンション:
+      μ: 2
+    使用場面:
+    - fold_macro
+    - template_core
+    - DSL
+    定義: q2tシステムにおいて、foldテンプレート・Zettel・DSLなどの内部で、要素同士の接続関係や配置パターンを統御する枠組み。テンション流の流路・分岐・接続・発生源などを構造的に規定する。
+    表記: 構造
+- operation:
+    source:
+    - Z010_operation
+    - fold/操作テンプレ
+    φψμ: ψ
+    テンション:
+      μ: 3
+    使用場面:
+    - fold_macro
+    - template_dynamics
+    - DSL
+    定義: q2tにおける構造変化や意味生成に対する能動的な行為単位。foldテンプレの変化構文、Zettelの接続・分岐操作、DSLにおける命令的トークンなど、構造を動的に推移させる要素全般を指す。
+    表記: 操作
+- semantic:
+    source:
+    - Z100_meaning
+    - fold/意味テンプレ
+    φψμ: μ
+    テンション:
+      μ: 5
+    使用場面:
+    - fold_macro
+    - Zettel
+    - evaluation
+    - DSL
+    定義: q2tにおいて構造・文脈・テンプレ進化によって動的に生成される意味層。Zettelの主張が立ち上がる際の含意、foldテンプレの選択肢に潜在する意味の流れ、DSL構文の背後に暗在化する意味生成の場を含む。
+    表記: 意味
+- logic:
+    source:
+    - Z002_logic
+    - fold/論理テンプレ
+    φψμ: φ
+    テンション:
+      μ: 3
+    使用場面:
+    - fold_macro
+    - template_structure
+    - DSL
+    定義: q2tにおける構造的記述の整合性や接続可能性を制御する形式層。foldテンプレにおける接続規則や、Zettel構造の展開順序、DSL構文の妥当性条件などに現れる。
+    表記: 論理
+- assertion:
+    source:
+    - Z020_assert
+    - fold/命題テンプレ
+    φψμ: ψ
+    テンション:
+      μ: 4
+    使用場面:
+    - Zettel
+    - evaluation
+    - fold_macro
+    定義: Zettelやテンプレ内で構造的に提示される主張・断定・仮説などの意味単位。評価の対象となり、foldの分岐やテンション変化を引き起こす。形式的整合性（logic）とは異なり、内容の可否・選択が問われる。
+    表記: 命題
+- value:
+    source:
+    - Z300_value
+    - fold/評価テンプレ
+    φψμ: μ
+    テンション:
+      μ: 4
+    使用場面:
+    - evaluation
+    - template_evaluation
+    - DSL
+    定義: Zettelやfoldテンプレにおいて、意味的・評価的・量的な要素として構造内部に位置づけられる変数的単位。テンションの数値化、意味要素のスカラー的評価、DSL構文における属性値などに現れる。
+    表記: 値
+- symbol:
+    source:
+    - Z011_symbol
+    - fold/記号テンプレ
+    φψμ: φ
+    テンション:
+      μ: 2
+    使用場面:
+    - DSL
+    - template_label
+    - fold_macro
+    定義: 構造や意味の抽象的な指標として用いられる視覚・音声・文字などの表層表現。Zettelやテンプレ内での識別子、DSL構文のトークン、構造タグや記述単位として使われる。
+    表記: 記号
+- proposition:
+    source:
+    - Z021_proposition
+    - fold/主張テンプレ
+    φψμ: ψ
+    テンション:
+      μ: 4
+    使用場面:
+    - Zettel
+    - output_surface
+    - evaluation
+    定義: Zettelやテンプレ内で構造化された言語表現として明示的に提示される主張文。`assertion`がテンプレ的・構造的な命題単位であるのに対し、`proposition`は自然言語的表現として現れる主張そのものを指す。
+    表記: 主張
+- interpretation:
+    source:
+    - Z110_interpret
+    - fold/解釈テンプレ
+    φψμ: μ
+    テンション:
+      μ: 4
+    使用場面:
+    - Zettel
+    - fold_macro
+    - evaluation
+    - DSL
+    定義: 構造・文脈・テンションなどから派生する意味の読み取り過程。Zettel間の接続によって生まれる意味の連鎖や、foldテンプレの選択結果として現れる意味の揺らぎ、DSL構文の含意の取り出しなどに現れる。
+    表記: 解釈
+- rule:
+    source:
+    - Z005_rule
+    - fold/規則テンプレ
+    φψμ: φ
+    テンション:
+      μ: 3
+    使用場面:
+    - fold_macro
+    - DSL
+    - evaluation
+    定義: 構造記述・進化過程・意味生成において、foldやDSL、Zettelの構造が従うべき制約条件や判断基準の集合。形式的整合性・型制約・評価条件などがこれに該当する。
+    表記: 規則
+- gesture:
+    source:
+    - Z070_gesture
+    - fold/動作テンプレ
+    φψμ: ψ
+    テンション:
+      μ: 2
+    使用場面:
+    - Zettel
+    - template_selection
+    - evaluation
+    定義: 言語化されないまま構造や意味生成に影響を与える直感的・身体的な操作。foldテンプレの選択、Zettelの接続順序、テンション判断などにおける無意識的・即時的な振る舞いとして現れる。
+    表記: 動作
+- affect:
+    source:
+    - Z200_affect
+    - fold/情動テンプレ
+    φψμ: μ
+    テンション:
+      μ: 5
+    使用場面:
+    - evaluation
+    - Zettel
+    - fold_macro
+    定義: 構造評価やテンション変化の深層に影響を及ぼす感情的・感覚的な動因。Zettelの意味判断、foldテンプレの選好、テンションの上昇・下降の起点として無意識的に作用する。
+    表記: 情動
+- formula:
+    source:
+    - Z300_formula
+    - fold/式テンプレ
+    φψμ: φ
+    テンション:
+      μ: 2
+    使用場面:
+    - DSL
+    - fold_macro
+    - Zettel
+    定義: 構造的・記号的関係を明示する形式的な記述単位。foldテンプレの条件指定、DSL構文のルール定義、Zettel内の意味生成ルールなどにおいて構文や関係式として現れる。
+    表記: 式
+- question:
+    source:
+    - Z090_question
+    - fold/問いテンプレ
+    φψμ: ψ
+    テンション:
+      μ: 3
+    使用場面:
+    - Zettel
+    - evaluation
+    - template_branch
+    定義: fold展開・Zettel連鎖・評価過程の出発点として発せられる探索的構造。未決断状態を発火させ、テンプレ分岐やテンション変化を促す構造的起点として働く。
+    表記: 問い
+- image:
+    source:
+    - Z400_image
+    - fold/像テンプレ
+    φψμ: μ
+    テンション:
+      μ: 5
+    使用場面:
+    - Zettel
+    - fold_macro
+    - template_design
+    定義: 意味や構造を感覚的に捉えるための内的表象。Zettelの直観的把握、テンプレの意味的連想、構造タグに対する視覚的・感情的な印象など、q2tの深層で意味を支える非言語的支柱。
+    表記: 像
+命令語:
+- node:
+    source:
+    - fold/節点テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - Zettel
+    定義: foldテンプレやDSL構文において、構造の最小単位を構成するノード。Zettelや構造記述において意味や操作の中心となる単位。
+    英語: node
+    表記: 節点
+- connect:
+    source:
+    - fold/接続テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - Canvas構造
+    定義: 構造要素間の関係性を明示する操作。ノード同士の意味的・構造的な関連付け、foldテンプレの流れ、Zettel間の論理的リンクなどを構成する。
+    英語: connect
+    表記: 接続
+- attribute:
+    source:
+    - fold/属性テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - Zettel
+    定義: 構造要素に対して意味や状態に関する補助的な情報を付加する操作。Zettelやノードに対するタグ付け、テンプレの分類補足、DSLでのプロパティ設定などに用いられる。
+    英語: attribute
+    表記: 属性
+- semantic:
+    source:
+    - fold/意味接続テンプレ
+    使用場面:
+    - fold_macro
+    - evaluation
+    - DSL
+    定義: 構造要素と意味層を接続する操作。foldテンプレやZettelが持つ意味的意図を構造内に組み込む際、またDSLにおける語彙の意味分類やテンション評価の際に用いられる。
+    英語: semantic
+    表記: 意味
+- state:
+    source:
+    - fold/状態テンプレ
+    使用場面:
+    - fold_macro
+    - evaluation
+    - SimLog
+    定義: 構造要素が現在どの段階・モード・テンションにあるかを記述・制御する操作。foldテンプレの確定・未定、Zettelの編集状態、テンションの進行度などを管理する。
+    英語: state
+    表記: 状態
+- type:
+    source:
+    - fold/型テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - template_class
+    定義: foldテンプレや構造要素に対して、分類・機能・意味的役割を割り当てるための操作。fold_type、Zettelの分類ラベル、テンプレ系列の定義付けなどで使われる。
+    英語: type
+    表記: 型
+- branch:
+    source:
+    - fold/分岐テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - evaluation
+    定義: 構造や意味の選択肢を展開する操作。foldテンプレにおける可変パターンの提示、Zettelの多義的進行、DSLにおける分岐制御などに使われる。
+    英語: branch
+    表記: 分岐
+- annotation:
+    source:
+    - fold/注釈テンプレ
+    使用場面:
+    - Zettel
+    - fold_macro
+    - DSL
+    定義: 構造要素に対して補足情報・背景文脈・コメントなどを加える操作。foldテンプレやZettel、DSLの構成要素に対して明示的なメタ情報を与える。
+    英語: annotation
+    表記: 注釈
+- change:
+    source:
+    - fold/変化テンプレ
+    使用場面:
+    - fold_macro
+    - SimLog
+    - evaluation
+    定義: 構造や意味の状態を意図的に更新・変形させる操作。foldテンプレの進化、テンション推移、Zettel間の意味転位などを引き起こす行為。
+    英語: change
+    表記: 変化
+- label:
+    source:
+    - fold/ラベルテンプレ
+    使用場面:
+    - Zettel
+    - DSL
+    - template_label
+    定義: 構造要素に識別名や視覚的表記を与える操作。Zettelやノードに付加される記号的名称であり、構造認識・分類・表示制御の補助となる。
+    英語: label
+    表記: ラベル
+- expand:
+    source:
+    - fold/展開テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - template_inheritance
+    定義: テンプレートや構造記述のスコープを展開・複製・分岐させる操作。foldテンプレの継承展開、DSLによるマクロ展開、Zettelの派生構造の生成などに使われる。
+    英語: expand
+    表記: 展開
+- include:
+    source:
+    - fold/包含テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - template_embed
+    定義: 構造要素やスコープを他の構造内部に組み込む操作。foldテンプレのネスト、Zettel内ブロックの包含、DSLでのテンプレ再利用指定などに用いられる。
+    英語: include
+    表記: 包含
+- exclude:
+    source:
+    - fold/除外テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - evaluation
+    定義: 構造から特定の要素や属性を意図的に取り除く操作。foldテンプレの削除条件、DSLでの無視指定、Zettel内の枝刈り処理などに用いられる。
+    英語: exclude
+    表記: 除外
+- map:
+    source:
+    - fold/対応テンプレ
+    使用場面:
+    - fold_macro
+    - DSL
+    - classification
+    定義: 構造要素間または語彙・型・意味タグ間の関係を対応づける操作。fold_macroでの分類タグ付与、DSLでの語彙分類、構造タグ同士の整合処理などに用いられる。
+    英語: map
+    表記: 対応付け
+自然語対応: {}

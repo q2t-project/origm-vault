@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"coord_node_7","type":"text","text":"質問","background":"tomato","x":340,"y":-160,"width":200,"height":100},
+		{"id":"coord_node_6","type":"text","text":"原因","background":"lightgreen","x":280,"y":160,"width":200,"height":100},
+		{"id":"coord_node_8","type":"text","text":"否定","background":"gray","x":400,"y":400,"width":200,"height":100},
+		{"id":"coord_node_3","type":"text","text":"定義","background":"lightblue","x":0,"y":-60,"width":200,"height":100},
+		{"id":"coord_node_11","type":"text","text":"感嘆","background":"gray","x":20,"y":520,"width":200,"height":100},
+		{"id":"coord_node_13","type":"text","text":"前提","background":"gray","x":0,"y":60,"width":200,"height":100},
+		{"id":"coord_node_5","type":"text","text":"結論","background":"lightgreen","x":0,"y":200,"width":200,"height":100},
+		{"id":"coord_node_10","type":"text","text":"対照","background":"gray","x":0,"y":350,"width":200,"height":100},
+		{"id":"coord_node_4","type":"text","text":"説明","background":"lightgreen","x":300,"y":-350,"width":200,"height":100},
+		{"id":"coord_node_12","type":"text","text":"譲歩","background":"gray","x":0,"y":-210,"width":200,"height":100},
+		{"id":"coord_node_9","type":"text","text":"対照_原因","background":"gray","x":-340,"y":350,"width":200,"height":100}
+	],
+	"edges":[
+		{"id":"coord_edge_labeled_0","type":"arrow","toFloating":false,"fromNode":"coord_node_9","fromSide":"right","toNode":"coord_node_10","toSide":"left","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_1","type":"arrow","fromNode":"coord_node_10","fromSide":"right","toNode":"coord_node_6","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_2","type":"arrow","fromNode":"coord_node_6","fromSide":"right","toNode":"coord_node_5","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_3","type":"arrow","fromNode":"coord_node_5","fromSide":"right","toNode":"coord_node_13","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_4","type":"arrow","fromNode":"coord_node_13","fromSide":"right","toNode":"coord_node_3","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_5","type":"arrow","fromNode":"coord_node_3","fromSide":"right","toNode":"coord_node_12","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_6","type":"arrow","fromNode":"coord_node_12","fromSide":"right","toNode":"coord_node_8","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_7","type":"arrow","fromNode":"coord_node_8","fromSide":"right","toNode":"coord_node_4","toSide":"right","label":"series_01 / μ+1"},
+		{"id":"coord_edge_labeled_8","type":"arrow","fromNode":"coord_node_4","fromSide":"right","toNode":"coord_node_7","toSide":"right","label":"series_01 / μ+1"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,51 @@
+@startuml q2t_system_overview
+
+title q2t-core System Overview (v1)
+
+skinparam linetype ortho
+skinparam defaultTextAlignment center
+skinparam rectangle {
+    BackgroundColor White
+    BorderColor Black
+}
+
+'==== Core System Entities ====
+rectangle "fold_macro.yaml" as FM {
+}
+
+rectangle "foldテンプレ群\n（Obsidian Zettel）" as FT
+rectangle "評価Zettel\n（テンション付）" as EV
+rectangle "SimLog\n（進化ログ）" as SL
+rectangle "fold DSL\n（進化記述）" as DSL
+rectangle "Obsidian Canvas構造" as CN
+rectangle "φ–ψ–μ分類空間" as SPACE
+
+'==== Null構造 ====
+cloud "Null構造\n(init / blank / undecided / null)" as NULL
+
+'==== コア語彙・SDL ====
+package "SDL命令語・コア語彙" {
+  rectangle "構文操作語\n（節点・状態など）" as SDL
+}
+
+'==== DSL連携 ====
+FM --> FT : 定義・派生管理
+FT --> EV : 評価生成
+EV --> SL : 進化ログ出力
+SL --> DSL : DSL化（@from, @to）
+DSL --> FM : DSL→fold_macro反映
+DSL --> CN : Canvas出力用変換
+DSL --> SPACE : 意味分類付与
+
+FT --> CN
+EV --> CN
+SL --> CN
+
+FM --> NULL : 初期状態
+FT --> NULL : 未分類テンプレ
+EV --> NULL : μ=0（未評価）
+
+SDL --> FM
+SDL --> FT
+
+@enduml

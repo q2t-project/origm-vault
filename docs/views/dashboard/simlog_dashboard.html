@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SimLog 統合Dashboard</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+select { font-size: 16px; margin-bottom: 10px; }
+pre { background: #f8f8f8; padding: 10px; border-radius: 6px; white-space: pre-wrap; }
+.container { border: 1px solid #ccc; margin-bottom: 30px; padding: 10px; border-radius: 8px; }
+h3 { margin-top: 0; }
+hr { margin: 20px 0; }
+</style>
+</head>
+<body>
+<h1>📊 SimLog 統合Dashboard</h1>
+<label for="series">系列を選択:</label>
+<select id="series" onchange="renderEntries()"></select>
+
+<div id="dashboard"></div>
+
+<script>
+let simlogData = {};
+fetch("simlog_index_with_preview.json")
+  .then(response => response.json())
+  .then(data => {
+    simlogData = data;
+    const select = document.getElementById("series");
+    Object.keys(simlogData).forEach(sid => {
+      const opt = document.createElement("option");
+      opt.value = sid;
+      opt.textContent = sid;
+      select.appendChild(opt);
+    });
+    renderEntries();
+  });
+
+function renderEntries() {
+  const sid = document.getElementById("series").value;
+  const container = document.getElementById("dashboard");
+  container.innerHTML = "";
+  simlogData[sid].forEach(entry => {
+    const div = document.createElement("div");
+    div.className = "container";
+    div.innerHTML = `
+      <h3>${entry.from} → ${entry.to}</h3>
+      <p><b>系列ID:</b> ${sid}</p>
+      <ul>
+        <li><b>SimLogテンプレ:</b> ${entry.path}</li>
+        <li><b>評価テンプレ:</b> zettel/eval/eval-${entry.from}-${entry.to}.md</li>
+        <li><b>DSL構文:</b> auto_dsl_recommend.dsl （検索: @from ${entry.from} @to ${entry.to})</li>
+        <li><b>Canvas:</b> <a href="canvas_dsl_series_${sid.replace(/\./g, '_')}.json" target="_blank">系列Canvasを開く</a></li>
+      </ul>
+      <details><summary>SimLog内容を表示</summary><pre>${entry.content}</pre></details>
+    `;
+    container.appendChild(div);
+  });
+}
+</script>
+</body>
+</html>

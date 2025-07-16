@@ -1,0 +1,6 @@
+{
+  "edges": [
+    {"from": "define", "to": "rule", "weight": 0.9},
+    {"from": "state", "to": "effect", "weight": 0.8}
+  ]
+}

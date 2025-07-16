@@ -1,0 +1,106 @@
+{
+  "name": "テンション優先テンプレ推薦",
+  "choices": [
+    {
+      "name": "nullテンプレートから開始",
+      "type": "nested",
+      "choices": [
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-.md"
+        },
+        {
+          "name": "→ 推奨テンプレ：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "対照_原因",
+      "text": "対照_原因",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "対照",
+      "text": "対照",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_4",
+      "text": "対照_原因→対照 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "対照_原因_to_dsl",
+      "fromNode": "対照_原因",
+      "toNode": "fold_dsl_from_simlog_4",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_対照",
+      "fromNode": "fold_dsl_from_simlog_4",
+      "toNode": "対照",
+      "label": "to"
+    }
+  ]
+}

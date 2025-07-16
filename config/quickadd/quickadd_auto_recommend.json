@@ -1,0 +1,336 @@
+{
+  "name": "自動派生テンプレ推薦",
+  "choices": [
+    {
+      "name": "テンション・構造から自動推薦されたテンプレ群",
+      "type": "nested",
+      "choices": [
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 自動派生テンプレ：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        }
+      ]
+    }
+  ]
+}

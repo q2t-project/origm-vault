@@ -1,0 +1,49 @@
+{# 
+  fold_macro_bridge_template.dsl.j2
+
+  概要: fold_macroとBridge構造、SimLogテンション系列のDSLコードを自動生成するためのJinja2テンプレート
+  用途: gen_macro_structures.py などのスクリプトから呼び出し、Zettel進化構造やテンション可視化DSLを展開
+  編集ルール: 
+    - 変数・ループ部はJinja2書式（{{ }}や{% for %}）
+    - DSL仕様や出力形式の変更時は必ず本体コメントを更新
+    - 必要に応じてDSLコメント構文（#など）も追記可
+#}
+
+@series fold_macro_ast
+
+{# ---- Node 1定義 ---- #}
+@node {{ T1 }}
+@label "{{ label1 }}"
+@type {{ type1 }}
+@ast
+{% for slot in slots1 %}
+  slot: {{ slot }}
+{% endfor %}
+
+{# ---- Node 2定義 ---- #}
+@node {{ T2 }}
+@label "{{ label2 }}"
+@type {{ type2 }}
+@ast
+{% for slot in slots2 %}
+  slot: {{ slot }}
+{% endfor %}
+
+@series fold_bridge
+
+{# ---- Bridge定義 ---- #}
+@bridge B01
+@from {{ T1 }}.slot:{{ slot1_key }}
+@to {{ T2 }}.slot:{{ slot2_key }}
+@type {{ bridge_type }}
+@label "{{ bridge_label }}"
+
+@series simlog
+
+{# ---- SimLogテンション記録 ---- #}
+@log L01
+@from {{ T1 }}
+@to {{ T2 }}
+@tension_delta {{ delta }}
+@bridge B01
+@reason "{{ simlog_reason }}"

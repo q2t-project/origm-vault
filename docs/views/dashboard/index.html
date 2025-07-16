@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Origm Dashboard</title>
+</head>
+<body>
+  <h1>Origm 推薦テンプレ・構造評価ダッシュボード</h1>
+
+  <section>
+    <h2>① 推薦テンプレUI（QuickAdd互換）</h2>
+    <p>
+      <a href="quickadd_template_ui_with_recommend.json" target="_blank">quickadd_template_ui_with_recommend.json</a><br>
+      → μテンションに基づくテンプレ推薦選択肢（QuickAdd向け）
+    </p>
+  </section>
+
+  <section>
+    <h2>② テンプレ即時ジャンプスクリプト</h2>
+    <p>
+      <a href="jump_trigger.html" target="_blank">jump_trigger.html</a><br>
+      → 推薦テンプレを即時に開くためのJSスニペット
+    </p>
+  </section>
+
+  <section>
+    <h2>③ 推薦テンプレを fold_macro 形式で出力</h2>
+    <p>
+      <a href="fold_macro_from_recommend.yaml" target="_blank">fold_macro_from_recommend.yaml</a><br>
+      → μテンションと推薦関係に基づいて追加されたテンプレ群（fold_macro形式）
+    </p>
+  </section>
+
+  <section>
+    <h2>④ 推薦構造の可視化（Canvas形式）</h2>
+    <ul>
+      <li><a href="canvas_core_tension_rays.json" target="_blank">テンション放射構造</a>：中核テンプレからの放射的ベクトル</li>
+      <li><a href="canvas_recommendation_edges.json" target="_blank">推薦エッジ構造</a>：fold間の推薦関係（矢印）</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⑤ 構造クラスタ（テンション圏）</h2>
+    <p>
+      <a href="recommend_cluster_groups.yaml" target="_blank">recommend_cluster_groups.yaml</a><br>
+      → μテンションに基づくテンプレ群のクラスタ分類
+    </p>
+  </section>
+
+  <section>
+    <h2>⑥ fold_macro補完（Canvas構造からの逆算）</h2>
+    <p>
+      <a href="fold_macro_from_canvas.yaml" target="_blank">fold_macro_from_canvas.yaml</a><br>
+      → Obsidian Canvas構造を解析して生成されたfold_macro形式テンプレ
+    </p>
+  </section>
+
+</body>
+</html>

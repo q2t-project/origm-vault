@@ -1,0 +1,64 @@
+# canvas_to_dsl_restored.yaml
+#
+# 概要: Obsidian Canvas構造からDSLテンプレへ復元した推薦テンプレ定義
+# Canvas上で展開・修復された進化系列データをDSL記述形式に戻すための中間テンプレート。
+# 主な用途:
+#   - Canvas編集・派生操作後のZettel/SimLog/テンプレ系列をDSL化・再構成する際の参照データ
+#   - recommend_eval_template系の自動生成・検証・履歴復元
+# 編集ルール:
+#   - from/to: 語彙・fold名（日本語・内容一致）
+#   - mu: 'null'（テンション情報未定義またはCanvas由来の再構成時用）
+#   - mutation: "evaluation_based"（評価由来進化）
+#   - state: "restored_from_canvas"（復元由来であることを必ず明記）
+#   - type: recommend_eval_template（拡張時は要整合）
+#   - 編集は通常不要／再自動生成時のみ内容が書き換わる想定
+# 例:
+# - from: 主張
+#   mu: 'null'
+#   mutation: evaluation_based
+#   state: restored_from_canvas
+#   to: 主張
+#   type: recommend_eval_template
+
+- from: 主張
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 主張
+  type: recommend_eval_template
+- from: 命題
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 命題
+  type: recommend_eval_template
+- from: 意味
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 意味
+  type: recommend_eval_template
+- from: 値
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 値
+  type: recommend_eval_template
+- from: 情動
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 情動
+  type: recommend_eval_template
+- from: 像
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 像
+  type: recommend_eval_template
+- from: 解釈
+  mu: 'null'
+  mutation: evaluation_based
+  state: restored_from_canvas
+  to: 解釈
+  type: recommend_eval_template

@@ -1,0 +1,24 @@
+{
+  "T1": "F01",
+  "label1": "構造テンプレ",
+  "type1": "structure",
+  "slots1": [
+    "主張",
+    "根拠",
+    "帰結"
+  ],
+  "T2": "F02",
+  "label2": "反論テンプレ",
+  "type2": "refutation",
+  "slots2": [
+    "反論対象",
+    "反論内容",
+    "反証例"
+  ],
+  "slot1_key": "主張",
+  "slot2_key": "反論対象",
+  "bridge_type": "contradiction",
+  "bridge_label": "主張に対する反論",
+  "delta": "+1",
+  "simlog_reason": "構造テンプレの主張に対する反論構造"
+}

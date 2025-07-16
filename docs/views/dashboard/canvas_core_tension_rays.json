@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "define", "x": 0, "y": 0},
+    {"id": "rule", "x": 100, "y": 0}
+  ],
+  "edges": [
+    {"from": "define", "to": "rule", "label": "μ=3"}
+  ]
+}

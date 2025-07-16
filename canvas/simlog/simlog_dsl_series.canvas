@@ -1,0 +1,294 @@
+{
+  "nodes": [
+    {
+      "id": "結論",
+      "text": "結論",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "前提",
+      "text": "前提",
+      "position": {
+        "x": 100,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_1",
+      "text": "結論→前提",
+      "position": {
+        "x": 200,
+        "y": 200
+      }
+    },
+    {
+      "id": "原因",
+      "text": "原因",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_2",
+      "text": "原因→結論",
+      "position": {
+        "x": 400,
+        "y": 200
+      }
+    },
+    {
+      "id": "対照",
+      "text": "対照",
+      "position": {
+        "x": 500,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_3",
+      "text": "対照→原因",
+      "position": {
+        "x": 600,
+        "y": 200
+      }
+    },
+    {
+      "id": "対照_原因",
+      "text": "対照_原因",
+      "position": {
+        "x": 700,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_4",
+      "text": "対照_原因→対照",
+      "position": {
+        "x": 800,
+        "y": 200
+      }
+    },
+    {
+      "id": "定義",
+      "text": "定義",
+      "position": {
+        "x": 900,
+        "y": 0
+      }
+    },
+    {
+      "id": "譲歩",
+      "text": "譲歩",
+      "position": {
+        "x": 1000,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_5",
+      "text": "定義→譲歩",
+      "position": {
+        "x": 1100,
+        "y": 200
+      }
+    },
+    {
+      "id": "説明",
+      "text": "説明",
+      "position": {
+        "x": 1200,
+        "y": 0
+      }
+    },
+    {
+      "id": "質問",
+      "text": "質問",
+      "position": {
+        "x": 1300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_6",
+      "text": "説明→質問",
+      "position": {
+        "x": 1400,
+        "y": 200
+      }
+    },
+    {
+      "id": "感嘆",
+      "text": "感嘆",
+      "position": {
+        "x": 1500,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_7",
+      "text": "質問→感嘆",
+      "position": {
+        "x": 1600,
+        "y": 200
+      }
+    },
+    {
+      "id": "fold_from_simlog_8",
+      "text": "前提→定義",
+      "position": {
+        "x": 1700,
+        "y": 200
+      }
+    },
+    {
+      "id": "否定",
+      "text": "否定",
+      "position": {
+        "x": 1800,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_from_simlog_9",
+      "text": "否定→説明",
+      "position": {
+        "x": 1900,
+        "y": 200
+      }
+    },
+    {
+      "id": "fold_from_simlog_10",
+      "text": "譲歩→否定",
+      "position": {
+        "x": 2000,
+        "y": 200
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "結論_to_fold_from_simlog_1",
+      "fromNode": "結論",
+      "toNode": "fold_from_simlog_1",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_1_to_前提",
+      "fromNode": "fold_from_simlog_1",
+      "toNode": "前提",
+      "label": "to"
+    },
+    {
+      "id": "原因_to_fold_from_simlog_2",
+      "fromNode": "原因",
+      "toNode": "fold_from_simlog_2",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_2_to_結論",
+      "fromNode": "fold_from_simlog_2",
+      "toNode": "結論",
+      "label": "to"
+    },
+    {
+      "id": "対照_to_fold_from_simlog_3",
+      "fromNode": "対照",
+      "toNode": "fold_from_simlog_3",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_3_to_原因",
+      "fromNode": "fold_from_simlog_3",
+      "toNode": "原因",
+      "label": "to"
+    },
+    {
+      "id": "対照_原因_to_fold_from_simlog_4",
+      "fromNode": "対照_原因",
+      "toNode": "fold_from_simlog_4",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_4_to_対照",
+      "fromNode": "fold_from_simlog_4",
+      "toNode": "対照",
+      "label": "to"
+    },
+    {
+      "id": "定義_to_fold_from_simlog_5",
+      "fromNode": "定義",
+      "toNode": "fold_from_simlog_5",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_5_to_譲歩",
+      "fromNode": "fold_from_simlog_5",
+      "toNode": "譲歩",
+      "label": "to"
+    },
+    {
+      "id": "説明_to_fold_from_simlog_6",
+      "fromNode": "説明",
+      "toNode": "fold_from_simlog_6",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_6_to_質問",
+      "fromNode": "fold_from_simlog_6",
+      "toNode": "質問",
+      "label": "to"
+    },
+    {
+      "id": "質問_to_fold_from_simlog_7",
+      "fromNode": "質問",
+      "toNode": "fold_from_simlog_7",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_7_to_感嘆",
+      "fromNode": "fold_from_simlog_7",
+      "toNode": "感嘆",
+      "label": "to"
+    },
+    {
+      "id": "前提_to_fold_from_simlog_8",
+      "fromNode": "前提",
+      "toNode": "fold_from_simlog_8",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_8_to_定義",
+      "fromNode": "fold_from_simlog_8",
+      "toNode": "定義",
+      "label": "to"
+    },
+    {
+      "id": "否定_to_fold_from_simlog_9",
+      "fromNode": "否定",
+      "toNode": "fold_from_simlog_9",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_9_to_説明",
+      "fromNode": "fold_from_simlog_9",
+      "toNode": "説明",
+      "label": "to"
+    },
+    {
+      "id": "譲歩_to_fold_from_simlog_10",
+      "fromNode": "譲歩",
+      "toNode": "fold_from_simlog_10",
+      "label": "from"
+    },
+    {
+      "id": "fold_from_simlog_10_to_否定",
+      "fromNode": "fold_from_simlog_10",
+      "toNode": "否定",
+      "label": "to"
+    }
+  ]
+}

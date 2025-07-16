@@ -1,0 +1,8 @@
+- id: 主張_評価
+  label: 主張（評価強化）
+  type: evaluation
+  tension: 3.5
+  slots:
+    - 評価観点
+    - 評価対象
+    - 判断/帰結

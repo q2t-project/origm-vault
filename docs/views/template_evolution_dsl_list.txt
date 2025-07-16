@@ -1,0 +1,49 @@
+---
+@from 原因
+@to   結論
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 否定
+@to   質問
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 定義
+@to   説明
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 結論
+@to   否定
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 結論
+@to   質問
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 説明
+@to   定義
+@mutation structure
+@type ast_diff
+@state normal
+
+---
+@from 質問
+@to   説明
+@mutation structure
+@type ast_diff
+@state normal
+

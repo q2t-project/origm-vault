@@ -1,0 +1,93 @@
+# simlog_from_ast_dsl.yaml
+#
+# 概要: AST差分由来SimLog進化テンプレート定義（DSL形式）
+# AST（構造木）上の差分分析から抽出した「from→to」進化パターンをSimLog系列のDSL形式で記述したもの。
+# 主な用途:
+#   - SimLog進化パターンのテンプレ展開（AST差分→SimLog/Zettel/Canvas自動生成）
+#   - gen_dsl_instance.py等のスクリプトや分析パイプラインの入力データとして利用
+# 編集ルール:
+#   - 各要素は dsl: {}（進化ペア）, id: 一意ID, series_id: 系列ID, title: 日本語説明, type: 常に "simlog"
+#   - dslフィールド内は from, to（進化元・進化先）, mutation（進化種別）, state, type（"ast_diff"固定）
+#   - 進化パターン追加時は、ASTノード命名・系列ID・ID重複等に注意
+# 例:
+# - dsl:
+#     from: 原因
+#     mutation: structure
+#     state: normal
+#     to: 結論
+#     type: ast_diff
+#   id: zettel-simlog-001
+#   series_id: series_ast
+#   title: AST進化（原因 → 結論）
+#   type: simlog
+
+- dsl:
+    from: 原因
+    mutation: structure
+    state: normal
+    to: '  結論'
+    type: ast_diff
+  id: zettel-simlog-001
+  series_id: series_ast
+  title: AST進化（原因 →   結論）
+  type: simlog
+- dsl:
+    from: 否定
+    mutation: structure
+    state: normal
+    to: '  質問'
+    type: ast_diff
+  id: zettel-simlog-002
+  series_id: series_ast
+  title: AST進化（否定 →   質問）
+  type: simlog
+- dsl:
+    from: 定義
+    mutation: structure
+    state: normal
+    to: '  説明'
+    type: ast_diff
+  id: zettel-simlog-003
+  series_id: series_ast
+  title: AST進化（定義 →   説明）
+  type: simlog
+- dsl:
+    from: 結論
+    mutation: structure
+    state: normal
+    to: '  否定'
+    type: ast_diff
+  id: zettel-simlog-004
+  series_id: series_ast
+  title: AST進化（結論 →   否定）
+  type: simlog
+- dsl:
+    from: 結論
+    mutation: structure
+    state: normal
+    to: '  質問'
+    type: ast_diff
+  id: zettel-simlog-005
+  series_id: series_ast
+  title: AST進化（結論 →   質問）
+  type: simlog
+- dsl:
+    from: 説明
+    mutation: structure
+    state: normal
+    to: '  定義'
+    type: ast_diff
+  id: zettel-simlog-006
+  series_id: series_ast
+  title: AST進化（説明 →   定義）
+  type: simlog
+- dsl:
+    from: 質問
+    mutation: structure
+    state: normal
+    to: '  説明'
+    type: ast_diff
+  id: zettel-simlog-007
+  series_id: series_ast
+  title: AST進化（質問 →   説明）
+  type: simlog

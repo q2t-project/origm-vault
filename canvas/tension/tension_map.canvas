@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"structure_0","type":"text","text":"structure（構造）\nμ=2","layer":"foreground","x":0,"y":-600,"width":300,"height":100},
+		{"id":"logic_3","type":"text","text":"logic（論理）\nμ=3","layer":"foreground","x":0,"y":-900,"width":300,"height":100},
+		{"id":"symbol_6","type":"text","text":"symbol（記号）\nμ=2","layer":"foreground","x":0,"y":-600,"width":300,"height":100},
+		{"id":"rule_9","type":"text","text":"rule（規則）\nμ=3","layer":"foreground","x":0,"y":-900,"width":300,"height":100},
+		{"id":"question_13","type":"text","text":"question（問い）\nμ=3","layer":"foreground","x":420,"y":-900,"width":300,"height":100},
+		{"id":"operation_1","type":"text","text":"operation（操作）\nμ=3","layer":"foreground","x":420,"y":-1020,"width":300,"height":100},
+		{"id":"gesture_10","type":"text","text":"gesture（動作）\nμ=2","layer":"foreground","x":420,"y":-600,"width":300,"height":100},
+		{"id":"formula_12","type":"text","text":"formula（式）\nμ=2","layer":"foreground","x":0,"y":-740,"width":300,"height":100},
+		{"id":"proposition_7","type":"text","text":"proposition（主張）\nμ=4","layer":"foreground","x":0,"y":-1200,"width":300,"height":100},
+		{"id":"assertion_4","type":"text","text":"assertion（命題）\nμ=4","layer":"foreground","x":0,"y":-1340,"width":300,"height":100},
+		{"id":"value_5","type":"text","text":"value（値）\nμ=4","layer":"foreground","x":420,"y":-1340,"width":300,"height":100},
+		{"id":"interpretation_8","type":"text","text":"interpretation（解釈）\nμ=4","layer":"foreground","x":420,"y":-1200,"width":300,"height":100},
+		{"id":"image_14","type":"text","text":"image（像）\nμ=5","layer":"foreground","x":0,"y":-1500,"width":300,"height":100},
+		{"id":"affect_11","type":"text","text":"affect（情動）\nμ=5","layer":"foreground","x":420,"y":-1640,"width":300,"height":100},
+		{"id":"semantic_2","type":"text","text":"semantic（意味）\nμ=5","layer":"foreground","x":420,"y":-1500,"width":300,"height":100}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

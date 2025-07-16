@@ -1,0 +1,126 @@
+{
+	"nodes":[
+		{
+			"id":"感嘆",
+			"type":"text",
+			"position":{"x":2400,"y":1637},
+			"text":"🧠 感嘆\nψ: expression\nμ: 0.25\n状態: expressive",
+			"x":-480,
+			"y":170,
+			"width":160,
+			"height":150
+		},
+		{
+			"id":"前提",
+			"type":"text",
+			"position":{"x":300,"y":230},
+			"text":"🧠 前提\nψ: foundation\nμ: 0.4\n状態: moderate",
+			"x":-430,
+			"y":-230,
+			"width":150,
+			"height":110
+		},
+		{
+			"id":"否定",
+			"type":"text",
+			"position":{"x":1500,"y":1004},
+			"text":"🧠 否定\nψ: refutation\nμ: 0.9\n状態: critical",
+			"x":-430,
+			"y":-70,
+			"width":150,
+			"height":110
+		},
+		{
+			"id":"対照_原因",
+			"type":"text",
+			"position":{"x":600,"y":13},
+			"text":"🧠 対照_原因\nψ: refutation\nμ: 0.73\n状態: stable",
+			"x":-430,
+			"y":-380,
+			"width":220,
+			"height":120
+		},
+		{
+			"id":"結論",
+			"type":"text",
+			"position":{"x":600,"y":809},
+			"text":"🧠 結論\nψ: assertion\nμ: 0.8\n状態: strong",
+			"x":-125,
+			"y":5,
+			"width":180,
+			"height":120
+		},
+		{
+			"id":"譲歩",
+			"type":"text",
+			"position":{"x":1200,"y":820},
+			"text":"🧠 譲歩\nψ: concession\nμ: 0.6\n状態: unstable",
+			"x":-850,
+			"y":-92,
+			"width":180,
+			"height":145
+		},
+		{
+			"id":"説明",
+			"type":"text",
+			"position":{"x":1800,"y":1222},
+			"text":"🧠 説明\nψ: explanation\nμ: 0.55\n状態: normal",
+			"x":-850,
+			"y":-320,
+			"width":180,
+			"height":140
+		},
+		{
+			"id":"定義",
+			"type":"text",
+			"position":{"x":900,"y":635},
+			"text":"🧠 定義\nψ: definition\nμ: 0.3\n状態: low",
+			"x":220,
+			"y":235,
+			"width":180,
+			"height":125
+		},
+		{
+			"id":"原因",
+			"type":"text",
+			"position":{"x":600,"y":425},
+			"text":"🧠 原因\nψ: refutation\nμ: 0.5\n状態: stable",
+			"x":220,
+			"y":-180,
+			"width":180,
+			"height":155
+		},
+		{
+			"id":"対照",
+			"type":"text",
+			"position":{"x":0,"y":45},
+			"text":"🧠 対照\nψ: None\nμ: 0.1\n状態: dormant",
+			"x":460,
+			"y":115,
+			"width":200,
+			"height":110
+		},
+		{
+			"id":"質問",
+			"type":"text",
+			"position":{"x":2100,"y":1432},
+			"text":"🧠 質問\nψ: inquiry\nμ: 0.35\n状態: inquiry",
+			"x":-125,
+			"y":360,
+			"width":180,
+			"height":130
+		}
+	],
+	"edges":[
+		{"id":"edge-対照_原因","type":"arrow","width":10,"fromNode":"対照","fromSide":"top","toNode":"原因","toSide":"bottom","color":"#ff4444","label":"因果（推論）"},
+		{"id":"edge-原因_結論","type":"arrow","width":3.1,"fromNode":"原因","fromSide":"left","toNode":"結論","toSide":"right","color":"#ff4444","label":"因果（推論）"},
+		{"id":"edge-前提_原因","type":"arrow","width":2.5,"fromNode":"前提","fromSide":"right","toNode":"原因","toSide":"left","color":"#ffaa00","label":"帰納（導出）"},
+		{"id":"edge-定義_結論","type":"arrow","width":2.8,"fromNode":"定義","fromSide":"left","toNode":"結論","toSide":"right","color":"#ff4444","label":"明確（拡張）"},
+		{"id":"edge-譲歩_否定","type":"arrow","width":3.7,"fromNode":"譲歩","fromSide":"right","toNode":"否定","toSide":"left","color":"#ff4444","label":"対立（転換）"},
+		{"id":"edge-質問_定義","type":"arrow","width":2.2,"fromNode":"質問","fromSide":"right","toNode":"定義","toSide":"left","color":"#ffaa00","label":"導入（問答）"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

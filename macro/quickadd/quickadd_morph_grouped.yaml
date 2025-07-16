@@ -1,0 +1,16 @@
+- category: morph.base.flow.μ2 / μ=2
+  templates:
+  - name: morph_stage_2 → morph_stage_2_μ2 (μ=2)
+    value: morph_stage_2_μ2
+- category: morph.base.flow.μ3 / μ=3
+  templates:
+  - name: morph_stage_3 → morph_stage_3_μ3 (μ=3)
+    value: morph_stage_3_μ3
+- category: morph.base.flow.μ4 / μ=4
+  templates:
+  - name: morph_stage_4 → morph_stage_4_μ4 (μ=4)
+    value: morph_stage_4_μ4
+- category: morph.base.flow.μ5 / μ=5
+  templates:
+  - name: morph_stage_5 → morph_stage_5_μ5 (μ=5)
+    value: morph_stage_5_μ5

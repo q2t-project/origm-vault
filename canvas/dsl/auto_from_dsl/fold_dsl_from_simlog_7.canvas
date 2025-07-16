@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "質問",
+      "text": "質問",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "感嘆",
+      "text": "感嘆",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_7",
+      "text": "質問→感嘆 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "質問_to_dsl",
+      "fromNode": "質問",
+      "toNode": "fold_dsl_from_simlog_7",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_感嘆",
+      "fromNode": "fold_dsl_from_simlog_7",
+      "toNode": "感嘆",
+      "label": "to"
+    }
+  ]
+}

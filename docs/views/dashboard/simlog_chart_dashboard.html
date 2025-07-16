@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SimLog μテンション推移 + 構造リンクDashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+select { font-size: 16px; margin-bottom: 10px; }
+.container { border: 1px solid #ccc; margin-bottom: 30px; padding: 10px; border-radius: 8px; }
+pre { background: #f8f8f8; padding: 10px; border-radius: 6px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>📈 SimLog μテンション + 系統構造Dashboard</h1>
+
+<label for="series">系列を選択:</label>
+<select id="series" onchange="renderDashboard()"></select>
+
+<canvas id="tensionChart" width="800" height="300"></canvas>
+<div id="entryList"></div>
+
+<script>
+let simlogData = {};
+let muData = {};
+fetch("simlog_index_with_preview.json")
+  .then(response => response.json())
+  .then(data => {
+    simlogData = data;
+    return fetch("mu_trends.json");
+  })
+  .then(response => response.json())
+  .then(mujson => {
+    muData = mujson;
+    const select = document.getElementById("series");
+    Object.keys(simlogData).forEach(sid => {
+      const opt = document.createElement("option");
+      opt.value = sid;
+      opt.textContent = sid;
+      select.appendChild(opt);
+    });
+    renderDashboard();
+  });
+
+function renderDashboard() {
+  const sid = document.getElementById("series").value;
+  const entries = simlogData[sid];
+  const muPoints = muData[sid] || [];
+
+  const labels = muPoints.map(p => p.to);
+  const values = muPoints.map(p => p.mu);
+
+  const ctx = document.getElementById('tensionChart').getContext('2d');
+  if (window.tensionChart) window.tensionChart.destroy();
+  window.tensionChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'μテンション推移',
+        data: values,
+        fill: false,
+        borderColor: 'red',
+        tension: 0.1
+      }]
+    },
+    options: {
+      responsive: false,
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { stepSize: 1 }
+        }
+      }
+    }
+  });
+
+  const container = document.getElementById("entryList");
+  container.innerHTML = "";
+  entries.forEach(entry => {
+    const div = document.createElement("div");
+    div.className = "container";
+    div.innerHTML = `
+      <h3>${entry.from} → ${entry.to}</h3>
+      <ul>
+        <li><b>SimLog:</b> ${entry.path}</li>
+        <li><b>評価テンプレ:</b> zettel/eval/eval-${entry.from}-${entry.to}.md</li>
+        <li><b>DSL構文:</b> auto_dsl_recommend.dsl（@from ${entry.from} @to ${entry.to}）</li>
+        <li><b>Canvas:</b> <a href="canvas_dsl_series_${entry.series_id.replace(/\./g, '_')}.json" target="_blank">開く</a></li>
+      </ul>
+      <details><summary>SimLog内容</summary><pre>${entry.content}</pre></details>
+    `;
+    container.appendChild(div);
+  });
+}
+</script>
+</body>
+</html>

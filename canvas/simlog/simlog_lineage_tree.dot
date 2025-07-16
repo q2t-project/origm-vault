@@ -1,0 +1,3 @@
+digraph SimLogTree {
+  rankdir=LR;
+}

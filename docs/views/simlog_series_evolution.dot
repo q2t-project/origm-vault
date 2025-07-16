@@ -1,0 +1,34 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style=filled, fontname="Helvetica"];
+"対照_原因" [label="対照_原因\nμ=1\nnull"];
+"対照" [label="対照\nμ=2\nnull"];
+"対照" [label="対照\nμ=2\nnull"];
+"原因" [label="原因\nμ=3\nnull"];
+"原因" [label="原因\nμ=3\nnull"];
+"結論" [label="結論\nμ=4\nnull"];
+"結論" [label="結論\nμ=4\nnull"];
+"前提" [label="前提\nμ=5\nnull"];
+"前提" [label="前提\nμ=5\nnull"];
+"定義" [label="定義\nμ=6\nnull"];
+"定義" [label="定義\nμ=6\nnull"];
+"譲歩" [label="譲歩\nμ=7\nnull"];
+"譲歩" [label="譲歩\nμ=7\nnull"];
+"否定" [label="否定\nμ=8\nnull"];
+"否定" [label="否定\nμ=8\nnull"];
+"説明" [label="説明\nμ=9\nnull"];
+"説明" [label="説明\nμ=9\nnull"];
+"質問" [label="質問\nμ=10\nnull"];
+"質問" [label="質問\nμ=10\nnull"];
+"感嘆" [label="感嘆\nμ=11\nnull"];
+"対照_原因" -> "対照" [label="μ+1\nnull"];
+"対照" -> "原因" [label="μ+1\nnull"];
+"原因" -> "結論" [label="μ+1\nnull"];
+"結論" -> "前提" [label="μ+1\nnull"];
+"前提" -> "定義" [label="μ+1\nnull"];
+"定義" -> "譲歩" [label="μ+1\nnull"];
+"譲歩" -> "否定" [label="μ+1\nnull"];
+"否定" -> "説明" [label="μ+1\nnull"];
+"説明" -> "質問" [label="μ+1\nnull"];
+"質問" -> "感嘆" [label="μ+1\nnull"];
+}

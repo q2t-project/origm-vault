@@ -1,0 +1,548 @@
+- series: unknown.series
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-対照-原因.md]]'
+    name: 対照 → 原因 (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: 原因
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=)
+    tension: φ=0, ψ=0, μ=
+    value: null
+- series: simlog.null.01
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: simlog.null.02
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: simlog.null.03
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: simlog.null.04
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: simlog.null.05
+  templates:
+  - eval: '[[zettel/eval/eval-None-None.md]]'
+    name: None → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: simlog.ast.原因_結論
+  templates:
+  - eval: '[[zettel/eval/eval-原因-None.md]]'
+    name: 原因 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.否定_質問
+  templates:
+  - eval: '[[zettel/eval/eval-否定-None.md]]'
+    name: 否定 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.定義_説明
+  templates:
+  - eval: '[[zettel/eval/eval-定義-None.md]]'
+    name: 定義 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.結論_否定
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.結論_質問
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.説明_定義
+  templates:
+  - eval: '[[zettel/eval/eval-説明-None.md]]'
+    name: 説明 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: simlog.ast.質問_説明
+  templates:
+  - eval: '[[zettel/eval/eval-質問-None.md]]'
+    name: 質問 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.define_express
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.define_質問
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.define_compare
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.define_explain
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.define_結論
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.define_説明
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.define_否定
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.define_inquire
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.define_定義
+  templates:
+  - eval: '[[zettel/eval/eval-define-None.md]]'
+    name: define → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.express_define
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.express_質問
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.express_compare
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.express_explain
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.express_結論
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.express_説明
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.express_否定
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.express_inquire
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.express_定義
+  templates:
+  - eval: '[[zettel/eval/eval-express-None.md]]'
+    name: express → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.質問_結論
+  templates:
+  - eval: '[[zettel/eval/eval-質問-None.md]]'
+    name: 質問 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.質問_説明
+  templates:
+  - eval: '[[zettel/eval/eval-質問-None.md]]'
+    name: 質問 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.質問_否定
+  templates:
+  - eval: '[[zettel/eval/eval-質問-None.md]]'
+    name: 質問 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.質問_定義
+  templates:
+  - eval: '[[zettel/eval/eval-質問-None.md]]'
+    name: 質問 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.compare_define
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.compare_express
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.compare_質問
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.compare_explain
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.compare_結論
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.compare_説明
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.compare_否定
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.compare_inquire
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.compare_定義
+  templates:
+  - eval: '[[zettel/eval/eval-compare-None.md]]'
+    name: compare → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.explain_define
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.explain_express
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.explain_質問
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.explain_compare
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.explain_結論
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.explain_説明
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.explain_否定
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.explain_inquire
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.explain_定義
+  templates:
+  - eval: '[[zettel/eval/eval-explain-None.md]]'
+    name: explain → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.結論_質問
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.結論_説明
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.結論_否定
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.結論_定義
+  templates:
+  - eval: '[[zettel/eval/eval-結論-None.md]]'
+    name: 結論 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.説明_質問
+  templates:
+  - eval: '[[zettel/eval/eval-説明-None.md]]'
+    name: 説明 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.説明_結論
+  templates:
+  - eval: '[[zettel/eval/eval-説明-None.md]]'
+    name: 説明 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.説明_否定
+  templates:
+  - eval: '[[zettel/eval/eval-説明-None.md]]'
+    name: 説明 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.説明_定義
+  templates:
+  - eval: '[[zettel/eval/eval-説明-None.md]]'
+    name: 説明 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.否定_質問
+  templates:
+  - eval: '[[zettel/eval/eval-否定-None.md]]'
+    name: 否定 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.否定_結論
+  templates:
+  - eval: '[[zettel/eval/eval-否定-None.md]]'
+    name: 否定 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.否定_説明
+  templates:
+  - eval: '[[zettel/eval/eval-否定-None.md]]'
+    name: 否定 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.否定_定義
+  templates:
+  - eval: '[[zettel/eval/eval-否定-None.md]]'
+    name: 否定 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.inquire_define
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.inquire_express
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.inquire_質問
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.inquire_compare
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.inquire_explain
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=0)
+    tension: φ=0, ψ=0, μ=0
+    value: null
+- series: auto.inquire_結論
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.inquire_説明
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.inquire_否定
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.inquire_定義
+  templates:
+  - eval: '[[zettel/eval/eval-inquire-None.md]]'
+    name: inquire → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.定義_質問
+  templates:
+  - eval: '[[zettel/eval/eval-定義-None.md]]'
+    name: 定義 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.定義_結論
+  templates:
+  - eval: '[[zettel/eval/eval-定義-None.md]]'
+    name: 定義 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.定義_説明
+  templates:
+  - eval: '[[zettel/eval/eval-定義-None.md]]'
+    name: 定義 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: auto.定義_否定
+  templates:
+  - eval: '[[zettel/eval/eval-定義-None.md]]'
+    name: 定義 → None (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: null
+- series: evalsim.logic.series1.refute_conclude
+  templates:
+  - eval: '[[zettel/eval/eval-refute-None.md]]'
+    name: refute → None (μ=2)
+    tension: φ=2, ψ=1, μ=2
+    value: null
+- series: morph.base.flow
+  templates:
+  - eval: '[[zettel/eval/eval-morph_stage_1-morph_stage_2.md]]'
+    name: morph_stage_1 → morph_stage_2 (μ=1)
+    tension: φ=1, ψ=0, μ=1
+    value: morph_stage_2
+  - eval: '[[zettel/eval/eval-morph_stage_2-morph_stage_3.md]]'
+    name: morph_stage_2 → morph_stage_3 (μ=2)
+    tension: φ=2, ψ=1, μ=2
+    value: morph_stage_3
+  - eval: '[[zettel/eval/eval-morph_stage_3-morph_stage_4.md]]'
+    name: morph_stage_3 → morph_stage_4 (μ=3)
+    tension: φ=3, ψ=2, μ=3
+    value: morph_stage_4
+  - eval: '[[zettel/eval/eval-morph_stage_4-morph_stage_5.md]]'
+    name: morph_stage_4 → morph_stage_5 (μ=4)
+    tension: φ=4, ψ=3, μ=4
+    value: morph_stage_5
+  - eval: '[[zettel/eval/eval-morph_stage_5-morph_stage_6.md]]'
+    name: morph_stage_5 → morph_stage_6 (μ=5)
+    tension: φ=5, ψ=4, μ=5
+    value: morph_stage_6

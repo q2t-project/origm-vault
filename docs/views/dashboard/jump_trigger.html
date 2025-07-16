@@ -1,0 +1,15 @@
+<script>
+function jumpToRecommendation(name) {
+  const macros = {
+    'define→rule': 'fold_macro_define_rule',
+    'state→effect': 'fold_macro_state_effect',
+    'cause→outcome': 'fold_macro_cause_outcome'
+  };
+  const macro = macros[name];
+  if (macro) {
+    window.open(macro + '.md', '_blank');
+  } else {
+    alert('マクロが見つかりません: ' + name);
+  }
+}
+</script>

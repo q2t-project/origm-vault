@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    {
+      "id": "contrast",
+      "x": 0,
+      "y": 0,
+      "type": "text",
+      "text": "対照"
+    },
+    {
+      "id": "cause",
+      "x": 300,
+      "y": 0,
+      "type": "text",
+      "text": "原因"
+    }
+  ],
+  "edges": [
+    {
+      "fromNode": "contrast",
+      "toNode": "cause",
+      "label": "推論 (μ=3)",
+      "color": "#ffcc66",
+      "thickness": 2.0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "New Evaluation",
+  "type": "Multi",
+  "args": [
+    {
+      "name": "fromテンプレ名",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "toテンプレ名",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "μ差分",
+      "type": "text",
+      "default": "1"
+    },
+    {
+      "name": "コメント",
+      "type": "text",
+      "default": ""
+    }
+  ],
+  "templatePath": "quickadd_eval_template.md"
+}

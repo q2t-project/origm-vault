@@ -1,0 +1,918 @@
+- bridges:
+  - from_slot: 主張
+    label: 主張に対する反論
+    to: F02
+    to_slot: 反論対象
+    type: contradiction
+  id: F01
+  label: 構造テンプレ
+  slots:
+  - 主張
+  - 根拠
+  - 帰結
+  status: missing
+  tags:
+  - missing
+  tension: 2
+  type: structure
+- bridges:
+  - from_slot: 反証例
+    label: 反証例を起点に新たな展開
+    to: F03
+    to_slot: 前提
+    type: transformation
+  id: F02
+  label: 反論テンプレ
+  slots:
+  - 反論対象
+  - 反論内容
+  - 反証例
+  status: missing
+  tags:
+  - missing
+  tension: 3
+  type: refutation
+- id: F03
+  label: 展開テンプレ
+  slots:
+  - 前提
+  - 補助要素
+  - 展開先
+  status: missing
+  tags:
+  - missing
+  tension: 4
+  type: expansion
+- dsl:
+    from: 'null'
+    mu: 0.73
+    mutation: base_init
+    psi: refutation
+    state: stable
+    to: unknown
+  eval:
+    comment: 初期評価：テンション構造は安定。分類・進化が明確。
+    last_eval: '2025-07-13'
+    mu_score: 0.73
+    psi_focus: refutation
+    tension_state: stable
+  from:
+  - 対照
+  id: 対照_原因
+  label: 対照 → 原因
+  morph: 推論
+  note: 比較から因果への進化
+  status: missing
+  tags:
+  - μ=3
+  - logic
+  - missing
+  tension: 3
+  to:
+  - 原因
+  type: 因果
+  μ_axis: 相互作用
+  φ_axis: 比較
+  ψ_axis: 推論
+- dsl:
+    from: 対照_原因
+    mu: 0.1
+    mutation: unknown
+    state: dormant
+    type: unspecified
+  eval:
+    comment: 初期比較対象。意味テンションは極低。
+    last_eval: '2025-07-13'
+    mu_score: 0.1
+    psi_focus: null
+    tension_state: dormant
+  id: 対照
+  name: 対照
+  status: missing
+  tags:
+  - missing
+  μ_axis: 'null'
+  φ_axis: 比較
+  ψ_axis: 'null'
+- dsl:
+    from: 対照
+    mu: 0.5
+    mutation: unknown
+    state: stable
+    type: unspecified
+  eval:
+    comment: 原因構造として中程度のテンション。射の終点候補。
+    last_eval: '2025-07-13'
+    mu_score: 0.5
+    psi_focus: refutation
+    tension_state: stable
+  id: 原因
+  name: 原因
+  status: missing
+  tags:
+  - missing
+  μ_axis: 相互作用
+  φ_axis: 因果
+  ψ_axis: 推論
+- dsl:
+    from: 原因
+    mu: 0.8
+    mutation: unknown
+    state: strong
+    type: unspecified
+  eval:
+    comment: 高テンション終点。議論のまとめ役。
+    last_eval: '2025-07-13'
+    mu_score: 0.8
+    psi_focus: assertion
+    tension_state: strong
+  id: 結論
+  name: 結論
+  status: missing
+  tags:
+  - missing
+  μ_axis: 収束
+  φ_axis: 帰結
+  ψ_axis: 推論
+- dsl:
+    from: 結論
+    mu: 0.4
+    mutation: unknown
+    state: moderate
+    type: unspecified
+  eval:
+    comment: 議論の出発点としてテンション中程度。
+    last_eval: '2025-07-13'
+    mu_score: 0.4
+    psi_focus: foundation
+    tension_state: moderate
+  id: 前提
+  name: 前提
+  status: missing
+  tags:
+  - missing
+  μ_axis: 支持
+  φ_axis: 準備
+  ψ_axis: 条件
+- dsl:
+    from: 前提
+    mu: 0.3
+    mutation: unknown
+    state: low
+    type: unspecified
+  eval:
+    comment: 論証ではないが安定構造。
+    last_eval: '2025-07-13'
+    mu_score: 0.3
+    psi_focus: definition
+    tension_state: low
+  id: 定義
+  name: 定義
+  status: missing
+  tags:
+  - missing
+  μ_axis: 静止
+  φ_axis: 同一
+  ψ_axis: 明確化
+- dsl:
+    from: 定義
+    mu: 0.6
+    mutation: unknown
+    state: unstable
+    type: unspecified
+  eval:
+    comment: 反論的だが衝突回避的。μ高め。
+    last_eval: '2025-07-13'
+    mu_score: 0.6
+    psi_focus: concession
+    tension_state: unstable
+  id: 譲歩
+  name: 譲歩
+  status: missing
+  tags:
+  - missing
+  μ_axis: 緩衝
+  φ_axis: 対立
+  ψ_axis: 修正
+- dsl:
+    from: 譲歩
+    mu: 0.9
+    mutation: unknown
+    state: critica
+    type: unspecified
+  eval:
+    comment: 最大テンション。議論の衝突点。
+    last_eval: '2025-07-13'
+    mu_score: 0.9
+    psi_focus: refutation
+    tension_state: critical
+  id: 否定
+  name: 否定
+  status: missing
+  tags:
+  - missing
+  μ_axis: 断絶
+  φ_axis: 否定
+  ψ_axis: 反駁
+- dsl:
+    from: 否定
+    mu: 0.55
+    mutation: unknown
+    state: norma
+    type: unspecified
+  eval:
+    comment: 背景補完テンプレ。μ中程度。
+    last_eval: '2025-07-13'
+    mu_score: 0.55
+    psi_focus: explanation
+    tension_state: normal
+  id: 説明
+  name: 説明
+  status: missing
+  tags:
+  - missing
+  μ_axis: 拡張
+  φ_axis: 展開
+  ψ_axis: 解釈
+- dsl:
+    from: 説明
+    mu: 0.35
+    mutation: unknown
+    state: inquiry
+    type: unspecified
+  eval:
+    comment: 探索的テンプレ。定義前構造。
+    last_eval: '2025-07-13'
+    mu_score: 0.35
+    psi_focus: inquiry
+    tension_state: inquiry
+  id: 質問
+  name: 質問
+  status: missing
+  tags:
+  - missing
+  μ_axis: 未定義
+  φ_axis: 不明
+  ψ_axis: 探求
+- dsl:
+    from: 質問
+    mu: 0.25
+    mutation: unknown
+    state: expressive
+    type: unspecified
+  eval:
+    comment: 非論理的テンプレ。枠外扱い。
+    last_eval: '2025-07-13'
+    mu_score: 0.25
+    psi_focus: expression
+    tension_state: expressive
+  id: 感嘆
+  name: 感嘆
+  status: missing
+  tags:
+  - missing
+  μ_axis: 発散
+  φ_axis: 感情
+  ψ_axis: 表現
+- from: 結論
+  id: fold_from_simlog_1
+  label: 結論→前提
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：結論→前提
+  tags:
+  - auto_generated
+  - simlog
+  to: 前提
+  type: auto_simlog
+- from: 原因
+  id: fold_from_simlog_2
+  label: 原因→結論
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：原因→結論
+  tags:
+  - auto_generated
+  - simlog
+  to: 結論
+  type: auto_simlog
+- from: 対照
+  id: fold_from_simlog_3
+  label: 対照→原因
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：対照→原因
+  tags:
+  - auto_generated
+  - simlog
+  to: 原因
+  type: auto_simlog
+- from: 対照_原因
+  id: fold_from_simlog_4
+  label: 対照_原因→対照
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：対照_原因→対照
+  tags:
+  - auto_generated
+  - simlog
+  to: 対照
+  type: auto_simlog
+- from: 定義
+  id: fold_from_simlog_5
+  label: 定義→譲歩
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：定義→譲歩
+  tags:
+  - auto_generated
+  - simlog
+  to: 譲歩
+  type: auto_simlog
+- from: 説明
+  id: fold_from_simlog_6
+  label: 説明→質問
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：説明→質問
+  tags:
+  - auto_generated
+  - simlog
+  to: 質問
+  type: auto_simlog
+- from: 質問
+  id: fold_from_simlog_7
+  label: 質問→感嘆
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：質問→感嘆
+  tags:
+  - auto_generated
+  - simlog
+  to: 感嘆
+  type: auto_simlog
+- from: 前提
+  id: fold_from_simlog_8
+  label: 前提→定義
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：前提→定義
+  tags:
+  - auto_generated
+  - simlog
+  to: 定義
+  type: auto_simlog
+- from: 否定
+  id: fold_from_simlog_9
+  label: 否定→説明
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：否定→説明
+  tags:
+  - auto_generated
+  - simlog
+  to: 説明
+  type: auto_simlog
+- from: 譲歩
+  id: fold_from_simlog_10
+  label: 譲歩→否定
+  mu: null
+  mutation: base_init
+  note: SimLogから生成された進化テンプレート：譲歩→否定
+  tags:
+  - auto_generated
+  - simlog
+  to: 否定
+  type: auto_simlog
+- id: branch_zettel_stub
+  label: branch_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_8.dsl
+  label: fold_from_simlog_8.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: question_zettel_stub
+  label: question_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_7.dsl
+  label: fold_dsl_from_simlog_7.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: compare-20250715
+  label: compare-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: transformation_zettel_stub
+  label: transformation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_10.dsl
+  label: fold_from_simlog_10.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: tension_zettel_stub
+  label: tension_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: explanation_zettel_stub
+  label: explanation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: yield-20250715
+  label: yield-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: eval_series1_step1
+  label: eval_series1_step1
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_2.dsl
+  label: fold_from_simlog_2.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: concretization_zettel_stub
+  label: concretization_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: definition-20250715
+  label: definition-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: negation_zettel_stub
+  label: negation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_9.dsl
+  label: fold_dsl_from_simlog_9.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: explanation-20250715
+  label: explanation-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: evaluation_zettel_stub
+  label: evaluation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_series.dsl
+  label: fold_dsl_series.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: evolved_zettel.dsl
+  label: evolved_zettel.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: express-20250715
+  label: express-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_3.dsl
+  label: fold_dsl_from_simlog_3.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: refutation-20250715
+  label: refutation-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: from_zettel.dsl
+  label: from_zettel.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: definition_zettel_stub
+  label: definition_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: causation_zettel_stub
+  label: causation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: contrast_zettel_stub
+  label: contrast_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: eval_template_sample
+  label: eval_template_sample
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: illustration-20250715
+  label: illustration-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: assert-20250715
+  label: assert-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_5.dsl
+  label: fold_dsl_from_simlog_5.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_6.dsl
+  label: fold_dsl_from_simlog_6.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_1.dsl
+  label: fold_dsl_from_simlog_1.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: conclusion_zettel_stub
+  label: conclusion_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: irony-20250715
+  label: irony-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: assertion_zettel_stub
+  label: assertion_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_4.dsl
+  label: fold_dsl_from_simlog_4.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_5.dsl
+  label: fold_from_simlog_5.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: inquire-20250715
+  label: inquire-20250715
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_10.dsl
+  label: fold_dsl_from_simlog_10.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_3.dsl
+  label: fold_from_simlog_3.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: concession_zettel_stub
+  label: concession_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: interpretation_zettel_stub
+  label: interpretation_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_7.dsl
+  label: fold_from_simlog_7.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: contradiction_zettel_stub
+  label: contradiction_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_init_null.dsl
+  label: fold_dsl_init_null.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: abstraction_zettel_stub
+  label: abstraction_zettel_stub
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_2.dsl
+  label: fold_dsl_from_simlog_2.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_1.dsl
+  label: fold_from_simlog_1.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_6.dsl
+  label: fold_from_simlog_6.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_dsl_from_simlog_8.dsl
+  label: fold_dsl_from_simlog_8.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_4.dsl
+  label: fold_from_simlog_4.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: fold_from_simlog_9.dsl
+  label: fold_from_simlog_9.dsl
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- id: eval_series1_step2
+  label: eval_series1_step2
+  mutation: unspecified
+  status: generated
+  tags:
+  - auto_added
+  - sync
+  type: auto_sync
+- dsl:
+    from: 結論
+    mu: null
+    to: 前提
+  id: fold_dsl_from_simlog_1
+  label: fold_dsl_from_simlog_1
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 原因
+    mu: null
+    to: 結論
+  id: fold_dsl_from_simlog_2
+  label: fold_dsl_from_simlog_2
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 対照
+    mu: null
+    to: 原因
+  id: fold_dsl_from_simlog_3
+  label: fold_dsl_from_simlog_3
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 対照_原因
+    mu: null
+    to: 対照
+  id: fold_dsl_from_simlog_4
+  label: fold_dsl_from_simlog_4
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 定義
+    mu: null
+    to: 譲歩
+  id: fold_dsl_from_simlog_5
+  label: fold_dsl_from_simlog_5
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 説明
+    mu: null
+    to: 質問
+  id: fold_dsl_from_simlog_6
+  label: fold_dsl_from_simlog_6
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 質問
+    mu: null
+    to: 感嘆
+  id: fold_dsl_from_simlog_7
+  label: fold_dsl_from_simlog_7
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 前提
+    mu: null
+    to: 定義
+  id: fold_dsl_from_simlog_8
+  label: fold_dsl_from_simlog_8
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 否定
+    mu: null
+    to: 説明
+  id: fold_dsl_from_simlog_9
+  label: fold_dsl_from_simlog_9
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog
+- dsl:
+    from: 譲歩
+    mu: null
+    to: 否定
+  id: fold_dsl_from_simlog_10
+  label: fold_dsl_from_simlog_10
+  status: generated
+  tags:
+  - auto_from_dsl
+  type: dsl_from_simlog

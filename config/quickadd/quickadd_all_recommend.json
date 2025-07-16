@@ -1,0 +1,376 @@
+{
+  "name": "テンプレ進化推薦（全統合）",
+  "choices": [
+    {
+      "name": "μ順推薦テンプレ一覧",
+      "type": "nested",
+      "choices": [
+        {
+          "name": "→ 推薦：conclude（μ=2）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-conclude.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：定義（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-定義.md"
+        },
+        {
+          "name": "→ 推薦：質問（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-質問.md"
+        },
+        {
+          "name": "→ 推薦：結論（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-結論.md"
+        },
+        {
+          "name": "→ 推薦：説明（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-説明.md"
+        },
+        {
+          "name": "→ 推薦：否定（μ=1）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-否定.md"
+        },
+        {
+          "name": "→ 推薦：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 推薦：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 推薦：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 推薦：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 推薦：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 推薦：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 推薦：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 推薦：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 推薦：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 推薦：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 推薦：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        },
+        {
+          "name": "→ 推薦：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 推薦：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 推薦：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 推薦：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 推薦：inquire（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-inquire.md"
+        },
+        {
+          "name": "→ 推薦：define（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-define.md"
+        },
+        {
+          "name": "→ 推薦：express（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-express.md"
+        },
+        {
+          "name": "→ 推薦：compare（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-compare.md"
+        },
+        {
+          "name": "→ 推薦：explain（μ=0）",
+          "type": "template",
+          "template_path": "zettel/fold/zettel-fold-explain.md"
+        }
+      ]
+    }
+  ]
+}

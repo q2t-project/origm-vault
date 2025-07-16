@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "否定",
+      "text": "否定",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "説明",
+      "text": "説明",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "fold_dsl_from_simlog_9",
+      "text": "否定→説明 | μ=null",
+      "position": {
+        "x": 150,
+        "y": 150
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "否定_to_dsl",
+      "fromNode": "否定",
+      "toNode": "fold_dsl_from_simlog_9",
+      "label": "from"
+    },
+    {
+      "id": "dsl_to_説明",
+      "fromNode": "fold_dsl_from_simlog_9",
+      "toNode": "説明",
+      "label": "to"
+    }
+  ]
+}

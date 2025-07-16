@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "text": "1\nDie Welt ist alles, was der Fall ist.[1]",
+      "position": {
+        "x": 300,
+        "y": 0
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.1",
+      "type": "text",
+      "text": "1.1\nDie Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.",
+      "position": {
+        "x": 600,
+        "y": 150
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.11",
+      "type": "text",
+      "text": "1.11\nDie Welt ist durch die Tatsachen bestimmt und dadurch, dass sie alle Tatsachen sind.",
+      "position": {
+        "x": 600,
+        "y": 300
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.12",
+      "type": "text",
+      "text": "1.12\nDenn, die Gesamtheit der Tatsachen bestimmt, was der Fall ist und auch, was nicht der Fall ist.",
+      "position": {
+        "x": 600,
+        "y": 450
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.13",
+      "type": "text",
+      "text": "1.13\nDie Tatsachen im logischen Raum sind die Welt.",
+      "position": {
+        "x": 600,
+        "y": 600
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.2",
+      "type": "text",
+      "text": "1.2\nDie Welt zerfällt in Tatsachen.",
+      "position": {
+        "x": 600,
+        "y": 750
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "1.21",
+      "type": "text",
+      "text": "1.21\nEines kann der Fall sein oder nicht der Fall sein und alles übrige gleich bleiben.",
+      "position": {
+        "x": 600,
+        "y": 900
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "text": "2\nWas der Fall ist, die Tatsache, ist das Bestehen von Sachverhalten.",
+      "position": {
+        "x": 300,
+        "y": 1050
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    },
+    {
+      "id": "2.01",
+      "type": "text",
+      "text": "2.01\nDer Sachverhalt ist eine Verbindung von Gegenständen. (Sachen, Dingen.)",
+      "position": {
+        "x": 600,
+        "y": 1200
+      },
+      "size": {
+        "width": 400,
+        "height": 100
+      }
+    }
+  ],
+  "edges": []
+}
